@@ -1,7 +1,13 @@
-.container .header {
-	.menu {}
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0.5rem;
 
-	.logo {}
+	.menu {
+	}
+
+	.logo {
+	}
 }
 
 .banner-slider {
@@ -21,9 +27,11 @@
 	margin: 0.5rem;
 }
 
-.whats-new {}
+.whats-new {
+}
 
-.favorites {}
+.favorites {
+}
 
 .shop-categories {
 	margin: 0 0.5rem;
@@ -34,7 +42,6 @@
 	margin-bottom: 1rem;
 }
 
-
 .shop-category h4.shop-header {
 	// border: none
 }
@@ -43,11 +50,8 @@
 	// border: none
 }
 
-
-.shop-category shop-now-btn {}
-
-
-
+.shop-category shop-now-btn {
+}
 
 .special-offers {
 	margin: 0 0.5rem;
@@ -67,12 +71,12 @@
 		border: 0.1rem solid black;
 	}
 
-	.subscribe {}
+	.subscribe {
+	}
 }
 
-.footer {}
-
-
+.footer {
+}
 
 // .btn-container {}
 
@@ -82,4 +86,5 @@ button.common-btn {
 	padding: 0.3rem 0.6rem;
 }
 
-.btn-label {}
+.btn-label {
+}
