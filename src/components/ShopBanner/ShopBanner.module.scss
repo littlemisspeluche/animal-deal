@@ -1,0 +1,20 @@
+.shop-category {
+  margin-bottom: 1rem;
+  background-color: #E8E8E8;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+
+  .shop-header h4 {
+    margin: 0;
+  }
+
+  h3.category-header {
+    margin: 0;
+  }
+
+  span.shop-btn {
+    line-height: 4rem;
+
+  }
+}

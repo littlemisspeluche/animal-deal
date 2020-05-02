@@ -1,0 +1,25 @@
+.card {
+  margin: 0.5rem;
+
+  .card-img {
+    background-color: #E8E8E8;
+    height: 12rem;
+  }
+
+  .card-info {
+    text-align: center;
+
+    p.card-title {
+      font-weight: 900;
+      margin-bottom: 0.3rem
+    }
+
+    p.card-price {
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin: 0;
+    }
+
+  }
+
+}
