@@ -4,17 +4,22 @@
 	margin: 0 0.5rem;
 
 	.menu {
+		line-height: 3rem;
 	}
 
-	.logo {
-	}
+	.logo {}
 }
 
 .banner-slider {
+	padding-bottom: 30px;
+	position: relative;
+	margin-bottom: 1rem;
+
 	.banner-item {
-		border: 0.1rem solid black;
 		width: 100%;
-		height: 10rem;
+		height: 11rem;
+		background-color: #E8E8E8;
+
 	}
 }
 
@@ -22,69 +27,61 @@
 	display: flex;
 }
 
-.card {
-	border: 0.1rem solid black;
-	margin: 0.5rem;
-}
+
 
 .whats-new {
+	margin-bottom: 2rem;
+
+	h2 {
+		margin: 0.5rem;
+	}
 }
 
 .favorites {
+	margin-bottom: 2rem;
+
+	h2 {
+		margin: 0.5rem;
+	}
 }
 
 .shop-categories {
 	margin: 0 0.5rem;
 }
 
-.shop-category {
-	border: 0.1rem solid black;
-	margin-bottom: 1rem;
-}
 
-.shop-category h4.shop-header {
-	// border: none
-}
 
-.shop-category h3.category-header {
-	// border: none
-}
 
-.shop-category shop-now-btn {
-}
+
+
 
 .special-offers {
-	margin: 0 0.5rem;
+	margin: 2rem 0.5rem 0 0.5rem;
+	padding-bottom: 30px;
+	position: relative;
 
 	.offer-card {
 		height: 21rem;
 		width: 100%;
-		border: 0.1rem solid black;
+		background-color: #E8E8E8;
 	}
 }
 
 .newsletter {
-	margin: 0 0.5rem;
+	margin: 1rem 0.5rem 3rem 0.5rem;
 
 	input {
 		width: 100%;
-		border: 0.1rem solid black;
+		border: 0.09rem solid #E8E8E8;
+		padding: 0.7rem;
+		margin-bottom: 1rem;
 	}
 
-	.subscribe {
+	input::placeholder {
+		color: black;
+		font-size: 1rem;
+		font-weight: 400;
 	}
-}
 
-.footer {
-}
-
-// .btn-container {}
-
-button.common-btn {
-	background: black;
-	color: white;
-	padding: 0.3rem 0.6rem;
-}
-
-.btn-label {
+	.subscribe {}
 }

@@ -3,36 +3,11 @@ import style from "./Home.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import BannerCarousel from "../Carousels/BannerCarousel";
 import CardsCarousel from "../Carousels/CardsCarousel";
+import Card from "../Card/Card";
+import ShopBanner from "../ShopBanner/ShopBanner";
+import Button from "../Button/Button";
+import Footer from "../Footer/Footer";
 
-export function Button({ onClick, label }) {
-	return (
-		<button className={style["common-btn"]} onClick={onClick}>
-			<span className={style["btn-label"]}>{label}</span>
-		</button>
-	);
-}
-
-const Card = ({ title, price }) => {
-	return (
-		<div className={style.card}>
-			<div className="card-img">
-				<img />
-				<h4>{title}</h4>
-				<p>{price}</p>
-			</div>
-		</div>
-	);
-};
-
-const ShopCategory = ({ category }) => {
-	return (
-		<div className={style["shop-category"]}>
-			<h4 className={style["shop-header"]}>Shop</h4>
-			<h3 className={style["category-header"]}>{category}</h3>
-			<Button onClick={() => console.log("clicked")} label={"Shop now"} />
-		</div>
-	);
-};
 export default function Home() {
 	return (
 		<div className={style.container}>
@@ -41,16 +16,11 @@ export default function Home() {
 					<FontAwesomeIcon icon="bars" />
 				</div>
 				<div className={style.logo}>
-					<p>Logo</p>
+					<p>LOGO</p>
 				</div>
 			</div>
 
-			<div
-				className={style["banner-slider"]}
-				style={{
-					paddingBottom: "30px",
-					position: "relative"
-				}}>
+			<div className={style["banner-slider"]}>
 				<BannerCarousel>
 					<div className={style["banner-item"]}>1</div>
 					<div className={style["banner-item"]}>2</div>
@@ -82,16 +52,11 @@ export default function Home() {
 			</div>
 
 			<div className={style["shop-categories"]}>
-				<ShopCategory category={"Dog"} />
-				<ShopCategory category={"Cat"} />
+				<ShopBanner category={"Dog"} />
+				<ShopBanner category={"Cat"} />
 			</div>
 
-			<div
-				style={{
-					paddingBottom: "30px",
-					position: "relative"
-				}}
-				className={style["special-offers"]}>
+			<div className={style["special-offers"]}>
 				<h2>Special Offers</h2>
 				<div className="offer-card"></div>
 				<BannerCarousel>
@@ -106,24 +71,10 @@ export default function Home() {
 			<div className={style.newsletter}>
 				<h2>newsletter</h2>
 				<input placeholder="email@address.com" />
-				<Button onClick={() => console.log("clicked")} label={"Subscribe"} />
+				<Button onClick={() => {}} label={"Subscribe"} />
 			</div>
-			<div className={style.footer}>
-				<ul>
-					<li>
-						<a href="#">About</a>
-					</li>
-					<li>
-						<a href="#">Search</a>
-					</li>
-					<li>
-						<a href="#">Contact us</a>
-					</li>
-					<li>
-						<a href="#">TBD</a>
-					</li>
-				</ul>
-			</div>
+
+			<Footer />
 		</div>
 	);
 }
