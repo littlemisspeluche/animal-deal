@@ -1,0 +1,18 @@
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  .product-card {
+    width: 45%;
+  }
+}
+
+.filterBtn {
+  border: none;
+}
+
+.active-category {
+  font-weight: 800;
+  border-bottom: 0.0.95rem solid black;
+  text-transform: capitalize;
+}
