@@ -1,0 +1,67 @@
+Menu -
+  Dogs products
+Food
+Dry Food - 8
+Wet Food - 1
+Treats - 1
+Hygiene
+Shampoos - 1
+Brushes and Combs - 1
+Nail Trimmers - 1
+Training Pads - 1
+Toys - 1
+Apparel - 1
+Accessories
+Food and Water - 1
+Travel and Transport - 1
+Cleaning Supplies - 1
+Pet Furniture - 1
+
+Cats Products
+Food
+Dry Food - 1
+Wet Food - 1
+Treats - 1
+Hygiene
+Shampoos - 1
+Brushes and Combs - 1
+Nail Trimmers - 1
+Litter
+Litter Sand - 1
+Litter Boxes - 1
+Litter Accessories - 1
+Toys - 1
+Apparel - 1
+Accessories
+Food and Water - 1
+Travel and Transport - 1
+Cleaning Supplies - 1
+Pet Furniture - 1
+
+Birds Products
+Food - 1
+Toys and Accessories - 1
+
+Fish Products
+Food - 1
+Accessories - 1
+
+
+{
+  "name": "",
+  "image": ["", ""],
+  "price": 13,
+  "original_price": 16.90,
+  "description": "",
+  "weight": 15,
+  "product_reviews": {
+    "author_name": "",
+    "author_email": "",
+    "rating": "",
+    "review_title": "",
+    "review_body": ""
+  },
+  "animal_type": "",
+  "product_type": "",
+  "product_category": ""
+},
