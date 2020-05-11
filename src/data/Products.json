@@ -1,9 +1,9 @@
 {
   "products": [{
       "name": "Orijen Original Dry Dog Food",
-      "images": ["https://i.ibb.co/MGCqfD5/Orijen-Original-Dry-Dog-Food-25-lbs.jpg", "https://i.ibb.co/tMk3GqR/Orijen-Original-Dry-Dog-Food-25-lbs-back.jpg"],
-      "price": 90.99,
-      "original_price": 86.44,
+      "image": ["https://i.ibb.co/MGCqfD5/Orijen-Original-Dry-Dog-Food-25-lbs.jpg", "https://i.ibb.co/tMk3GqR/Orijen-Original-Dry-Dog-Food-25-lbs-back.jpg"],
+      "price": 86.44,
+      "original_price": 90.99,
       "description": "Rich in protein and free of any grains or plant protein concentrates, ORIJEN Original features unmatched inclusions of free-run chicken and turkey, wild-caught fish, and cage-free eggs. Mother Nature did it best, and we're following her lead with this nutrient-dense, delicious, ancestral diet that dogs are evolved to eat. From Dachshunds to Great Danes, all dogs possess a biological need for a diet rich and varied in fresh whole animal ingredients. With 38 % richly nourishing protein, and 20 % carbohydrates to nourish dogs of all life stages according to their evolutionary and biological needs. Free of rendered poultry meals, 1 / 3 of the meats are from dehydrated chicken and turkey(air - dried at low temperature from fresh meat) for a concentrated source of nourishing protein. Unmatched by any other food, 2 / 3 of the meats are FRESH(refrigerated, without preservatives) or RAW(flash - frozen, without preservatives), including the top 10 meat ingredients. Nutrient - dense WholePrey ratios of fresh meat, organs, cartilage and bones plus fresh whole fish and fresh whole eggs provide a natural source of virtually every nutrient your dog needs. Infusions of gently freeze - dried liver enhance flavor and palatability naturally, making ORIJEN deliciously tasty, even for fussy eaters.",
       "weight": 25,
       "product_reviews": [{
@@ -84,8 +84,8 @@
     {
       "name": "Blue Buffalo Homestyle Recipe Chicken Dinner with Garden Vegetables & Brown Rice Canned Dog Food, case of 12",
       "image": ["https://i.ibb.co/HVsy5L5/Blue-Buffalo-Homestyle-Recipe-Chicken-Dinner-with-Garden-Vegetables-amp-Brown-Rice-Canned-Dog-Food.jpg", "https://i.ibb.co/vjGX24f/Blue-Buffalo-Homestyle-Recipe-Chicken-Dinner-with-Garden-Vegetables-amp-Brown-Rice-Canned-Dog-Food-back.jpg"],
-      "price": 18.00,
-      "original_price": 17.10,
+      "price": 17.10,
+      "original_price": 18.00,
       "description": "Get your furry friend to keep on cluckin’ for Blue Buffalo Homestyle Recipe Natural Adult Wet Dog Food. Paw-fect for your pupper pal, this irresistibly tasty wet food is made using only the finest natural ingredients. It starts with high-quality protein from tender chunks of chicken, packed with garden fruits and veggies, then enhanced with vitamins and minerals. Formulated to support lean muscle mass and the other nutritional needs of your grown-up guy, this pate-style dog food is made with wholesome ingredients that do not contain any by-product meals, corn, wheat, soy, artificial flavors or preservatives.",
       "weight": 12.5,
       "product_reviews": [{

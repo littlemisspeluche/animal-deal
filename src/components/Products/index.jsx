@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { default as JSON } from "../../Products.json";
+import { default as JSON } from "../../data/Products.json";
 import Card from "../Card/Card";
 import style from "./Products.module.scss";
-import { default as JSON_CATEGORIES } from "../../Categories.json";
+import { default as JSON_CATEGORIES } from "../../data/Categories.json";
 
 export default function Products() {
 	const { products } = JSON;
@@ -52,6 +52,7 @@ export default function Products() {
 	}
 
 	const SubMenus = ({ title, subMenu }) => {
+		// firstLevelWasClicked --> firstLevelState | secondLevelWasClicked ----> secondLevelState | thirdLevelCategory
 		return (
 			<div>
 				<p
@@ -93,6 +94,7 @@ export default function Products() {
 	};
 
 	const FilteredProducts = () => {
+		// products // Card // firstLevelState // secondLevelState // thirdLevelState
 		return products.map(singleProduct => {
 			const { product_data } = singleProduct;
 			const { animal_type, product_type, product_category } = product_data;
@@ -115,10 +117,65 @@ export default function Products() {
 		});
 	};
 
+	// Sort by product Popularity
+
+	// Filter by product product_category
+	// Add navbar
+	// Add Header and banner
+	// Add footer
+
+	const [isOpenSortBy, setIsOpenSortBy] = useState(false);
+	function Dropdown() {
+		const menuItems = [
+			"Price High to Low",
+			"Price Low to High",
+			"Alphbetically",
+			"Popularity"
+		];
+
+		const handleBtnClick = () => {
+			setIsOpenSortBy(!isOpenSortBy);
+		};
+
+		const sortHightToLow = () =>
+			products
+				.sort((a, b) => parseFloat(a.price) - parseFloat(b.price))
+				.reverse();
+
+		const sortLowToHigh = () =>
+			products.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
+
+		const sortAlphbetically = () =>
+			products.sort((a, b) => a.name.localeCompare(b.name));
+
+		const sortPopularity = () => {
+			console.log("Calculate average popularity");
+		};
+
+		return (
+			<div className="Dropdown">
+				<button onClick={handleBtnClick}>Sort by</button>
+				{isOpenSortBy && (
+					<div>
+						{menuItems.map(menuItem => (
+							<div className="menuItem" key={menuItem}>
+								{menuItem}
+							</div>
+						))}
+					</div>
+				)}
+			</div>
+		);
+	}
+
 	return (
 		<div>
 			<div>
-				<div style={{ display: "flex", justifyContent: "space-between" }}>
+				<div
+					style={{
+						display: "flex",
+						justifyContent: "space-between"
+					}}>
 					<div>
 						<button
 							className={style.filterBtn}
@@ -143,7 +200,7 @@ export default function Products() {
 						)}
 					</div>
 					<div>
-						<input placeholder="sort by" />
+						<Dropdown />
 					</div>
 				</div>
 			</div>
@@ -151,7 +208,11 @@ export default function Products() {
 				{firstLevelState ? (
 					<FilteredProducts />
 				) : (
-					<div style={{ display: "flex", flexWrap: "wrap" }}>
+					<div
+						style={{
+							display: "flex",
+							flexWrap: "wrap"
+						}}>
 						{products.map(product => (
 							<div style={{ width: "50%" }}>
 								<Card title={product.name} price={product.price} />
