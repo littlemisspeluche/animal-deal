@@ -1,8 +1,9 @@
 import filters from "./Filters.action";
 import products from "./Products.action";
-const allActions = {
+
+const actions = {
 	filters,
 	products
 };
 
-export default allActions;
+export default actions;

@@ -4,8 +4,7 @@ const INITIAL_STATE = {
 	categories: null
 	// isLoading: false
 };
-
-const filterMenu = (state = INITIAL_STATE, action) => {
+export default (state = INITIAL_STATE, action) => {
 	switch (action.type) {
 		// case actionTypes.SORT_ALPHABETICALLY:
 		// 	return {
@@ -27,4 +26,3 @@ const filterMenu = (state = INITIAL_STATE, action) => {
 			return state;
 	}
 };
-export default filterMenu;
