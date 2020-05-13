@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import actions from "../../../actions";
+import actions from "../../../../actions";
 import SubMenu from "./SubMenu";
 
 export default function MenuCategories({ categoryData }) {

@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import actions from "../../../../actions";
+import actions from "../../../../../actions";
 
 export default function SubMenu({ categoryData }) {
 	const { activeProductType } = useSelector(state => state.products);

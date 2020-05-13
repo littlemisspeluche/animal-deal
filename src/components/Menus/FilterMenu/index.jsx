@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import MenuCategories from "./MenuCategories";
-import actions from "../../actions";
+import actions from "../../../actions";
 
-export default function FiltersMenu() {
-	const categoriesJSON = require("../../data/Categories.json");
+export default function FilterMenu() {
+	const categoriesJSON = require("../../../data/Categories.json");
 	const { menu } = categoriesJSON;
 
 	const [isFilterMenuOpen, setIFilterMenuOpen] = useState(false);

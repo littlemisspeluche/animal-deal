@@ -1,11 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Products from "./components/Products";
-import ProductsNew from "./components/Products/ProductsNew";
 import "./App.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faFilter } from "@fortawesome/free-solid-svg-icons";
 
 library.add(faBars, faFilter);
@@ -17,11 +16,8 @@ function App() {
 				<Route exact path="/">
 					<Home />
 				</Route>
-				<Route path="/products">
+				<Route exact path="/products">
 					<Products />
-				</Route>
-				<Route path="/products_new">
-					<ProductsNew />
 				</Route>
 			</Switch>
 		</Router>

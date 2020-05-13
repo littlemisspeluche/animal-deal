@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import Card from "./Card/Card";
+
 export default function Cards() {
 	const {
 		products,
@@ -8,6 +9,18 @@ export default function Cards() {
 		activeProductType,
 		activeProductCategory
 	} = useSelector(state => state.products);
+
+	const CardsContainer = ({ filteredList }) => {
+		return filteredList.map(product => {
+			return (
+				<div style={{ width: "45%" }}>
+					<Card title={product.name} price={product.price} />
+				</div>
+			);
+		});
+	};
+
+	// const { activeSortingMethod } = useSelector(state => state.filter);
 
 	if (activeAnimalType && activeProductType && activeProductCategory) {
 		const filterByProductCategory = products.filter(obj => {
@@ -17,9 +30,7 @@ export default function Cards() {
 				obj.product_data.product_category === activeProductCategory
 			);
 		});
-		return filterByProductCategory.map(product => {
-			return <Card title={product.name} price={product.price} />;
-		});
+		return <CardsContainer filteredList={filterByProductCategory} />;
 	} else if (activeAnimalType && activeProductType) {
 		const filterByProductType = products.filter(obj => {
 			return (
@@ -27,18 +38,12 @@ export default function Cards() {
 				obj.product_data.animal_type === activeAnimalType
 			);
 		});
-		return filterByProductType.map(product => {
-			return <Card title={product.name} price={product.price} />;
-		});
+		return <CardsContainer filteredList={filterByProductType} />;
 	} else if (activeAnimalType) {
 		const filterByAnimalType = products.filter(obj => {
 			return obj.product_data.animal_type === activeAnimalType;
 		});
-		return filterByAnimalType.map(product => {
-			return <Card title={product.name} price={product.price} />;
-		});
+		return <CardsContainer filteredList={filterByAnimalType} />;
 	}
-	return products.map(product => {
-		return <Card title={product.name} price={product.price} />;
-	});
+	return <CardsContainer filteredList={products} />;
 }

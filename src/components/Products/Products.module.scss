@@ -1,18 +1,15 @@
 .products-container {
   display: flex;
   flex-wrap: wrap;
-
-  .product-card {
-    width: 45%;
-  }
+  justify-content: center;
 }
 
-.filterBtn {
-  border: none;
-}
+// .filterBtn {
+//   border: none;
+// }
 
-.active-category {
-  font-weight: 800;
-  border-bottom: 0.0.95rem solid black;
-  text-transform: capitalize;
-}
+// .active-category {
+//   font-weight: 800;
+//   border-bottom: 0.0.95rem solid black;
+//   text-transform: capitalize;
+// }
