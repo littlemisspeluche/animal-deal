@@ -1,6 +1,15 @@
 import * as actionTypes from "../actions/Products.actionsType";
 
-const productsData = (state = {}, action) => {
+const INITIAL_STATE = {
+	products: null,
+	activeAnimalType: null,
+	activeProductType: null,
+	activeProductCategory: null,
+	sortedProductsList: null,
+	filteredProducts: null
+};
+
+export default (state = INITIAL_STATE, action) => {
 	switch (action.type) {
 		case actionTypes.GET_PRODUCTS:
 			return {
@@ -23,10 +32,18 @@ const productsData = (state = {}, action) => {
 				...state,
 				activeProductCategory: action.payload
 			};
+		case "SORTED_PRODUCTS":
+			return {
+				...state,
+				sortedProductsList: action.payload
+			};
+		case "FILTERED_PRODUCTS":
+			return {
+				...state,
+				filteredProducts: action.payload
+			};
 
 		default:
 			return state;
 	}
 };
-
-export default productsData;

@@ -7,24 +7,36 @@ const getProducts = products => {
 	};
 };
 
-const getAnimalType = categoryId => ({
+const setActiveAnimalType = categoryId => ({
 	type: "ACTIVE_ANIMAL_TYPE",
 	payload: categoryId
 });
 
-const getProductType = categoryId => ({
+const setActiveProductType = categoryId => ({
 	type: "ACTIVE_PRODUCT_TYPE",
 	payload: categoryId
 });
 
-const getProductCategory = categoryId => ({
+const setActiveProductCategory = categoryId => ({
 	type: "ACTIVE_PRODUCT_CATEGORY",
 	payload: categoryId
 });
 
+const getSortedProducts = products => ({
+	type: "SORTED_PRODUCTS",
+	payload: products
+});
+
+const getFilteredProducts = products => ({
+	type: "FILTERED_PRODUCTS",
+	payload: products
+});
+
 export default {
 	getProducts,
-	getAnimalType,
-	getProductType,
-	getProductCategory
+	setActiveAnimalType,
+	setActiveProductType,
+	setActiveProductCategory,
+	getSortedProducts,
+	getFilteredProducts
 };

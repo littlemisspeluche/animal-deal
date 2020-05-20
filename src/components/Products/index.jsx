@@ -1,225 +1,108 @@
-import React, { useState, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import { default as JSON } from "../../data/Products.json";
-import Card from "../Card/Card";
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import actions from "../../actions";
 import style from "./Products.module.scss";
-import { default as JSON_CATEGORIES } from "../../data/Categories.json";
+import FilterMenu from "../Menus/FilterMenu";
+import SortMenu from "../Menus/SortMenu";
+import Card from "../Cards/Card/Card";
+import { Link } from "react-router-dom";
 
 export default function Products() {
-	const { products } = JSON;
-	const { data } = JSON_CATEGORIES;
-	const [filterMenuVisible, setFilterMenuVisible] = useState(false);
-	const [firstLevelState, setFirstLevelState] = useState("");
-	const [secondLevelState, setSecondLevelState] = useState("");
-	const [thirdLevelState, setThirdLevelState] = useState("");
+	const productJSON = require("../../data/Products.json");
 
-	const menuCategories = data.menu;
+	const dispatch = useDispatch();
 
-	const toggleFilterMenu = () => {
-		setFilterMenuVisible(!filterMenuVisible);
+	const { data } = productJSON;
+
+	const {
+		products,
+		sortedProductsList,
+		activeAnimalType,
+		activeProductType,
+		activeProductCategory,
+		filteredProducts
+	} = useSelector(state => state.products);
+	useEffect(() => {
+		dispatch(actions.products.getProducts(data));
+		dispatch(actions.cart.getProducts(data));
+	}, []);
+
+	const getProductsByActiveAnimalType = () => {
+		if (activeAnimalType) {
+			const filtered = products.filter(obj => {
+				return obj.product_data.animal_type === activeAnimalType;
+			});
+			dispatch(actions.products.getFilteredProducts(filtered));
+			return filtered;
+		}
 	};
 
-	function firstLevelWasClicked(title) {
-		if (firstLevelState === "") {
-			setFirstLevelState(title);
-		}
-		// else if (firstLevelState !== title) {
-		// 	setSecondLevelState(title);
-		// }
-		else {
-			setFirstLevelState("");
-		}
-	}
+	useEffect(() => {
+		getProductsByActiveAnimalType();
+	}, [activeAnimalType]);
 
-	function secondLevelWasClicked(title) {
-		if (secondLevelState === "") {
-			setSecondLevelState(title);
-		} else if (secondLevelState !== title) {
-			setSecondLevelState(title);
-		} else {
-			setSecondLevelState("");
-		}
-	}
-	function thirdLevelWasClicked(title) {
-		if (thirdLevelState === "") {
-			setThirdLevelState(title);
-		} else if (thirdLevelState !== title) {
-			setThirdLevelState(title);
-		} else {
-			setThirdLevelState("");
-		}
-	}
-
-	const SubMenus = ({ title, subMenu }) => {
-		// firstLevelWasClicked --> firstLevelState | secondLevelWasClicked ----> secondLevelState | thirdLevelCategory
-		return (
-			<div>
-				<p
-					onClick={() => {
-						firstLevelWasClicked(title);
-					}}>
-					{title}
-				</p>
-				{firstLevelState === title &&
-					subMenu.map((subCategory, index) => {
-						return (
-							<div>
-								<h5
-									key={index}
-									onClick={() => {
-										secondLevelWasClicked(subCategory.title);
-									}}>
-									{subCategory.title}
-								</h5>
-								<ul>
-									{subCategory.submenu &&
-										subCategory.submenu.map((thirdLevelCategory, index) => {
-											return (
-												<li
-													key={index}
-													onClick={() => {
-														thirdLevelWasClicked(thirdLevelCategory.title);
-													}}>
-													{thirdLevelCategory.title}
-												</li>
-											);
-										})}
-								</ul>
-							</div>
-						);
-					})}
-			</div>
-		);
-	};
-
-	const FilteredProducts = () => {
-		// products // Card // firstLevelState // secondLevelState // thirdLevelState
-		return products.map(singleProduct => {
-			const { product_data } = singleProduct;
-			const { animal_type, product_type, product_category } = product_data;
-			if (
-				animal_type === firstLevelState &&
-				product_type === secondLevelState
-			) {
+	const getProductsByActiveProductType = () => {
+		if (activeAnimalType && activeProductType) {
+			const filtered = filteredProducts.filter(obj => {
 				return (
-					<div className={style["product-card"]}>
-						<Card title={singleProduct.name} price={singleProduct.price} />
-					</div>
+					obj.product_data.product_type === activeProductType &&
+					obj.product_data.animal_type === activeAnimalType
 				);
-			} else if (animal_type === firstLevelState && !secondLevelState) {
-				return (
-					<div className={style["product-card"]}>
-						<Card title={singleProduct.name} price={singleProduct.price} />
-					</div>
-				);
-			}
-		});
+			});
+			dispatch(actions.products.getFilteredProducts(filtered));
+			return filtered;
+		}
 	};
 
-	// Sort by product Popularity
+	useEffect(() => {
+		getProductsByActiveProductType();
+	}, [activeProductType]);
 
-	// Filter by product product_category
-	// Add navbar
-	// Add Header and banner
-	// Add footer
+	const getProductsByActiveProductCategory = () => {
+		if (activeAnimalType && activeProductType && activeProductCategory) {
+			const filtered = filteredProducts.filter(obj => {
+				return (
+					obj.product_data.product_type === activeProductType &&
+					obj.product_data.animal_type === activeAnimalType &&
+					obj.product_data.product_category === activeProductCategory
+				);
+			});
+			dispatch(actions.products.getFilteredProducts(filtered));
+			return filtered;
+		}
+	};
 
-	const [isOpenSortBy, setIsOpenSortBy] = useState(false);
-	function Dropdown() {
-		const menuItems = [
-			"Price High to Low",
-			"Price Low to High",
-			"Alphbetically",
-			"Popularity"
-		];
-
-		const handleBtnClick = () => {
-			setIsOpenSortBy(!isOpenSortBy);
-		};
-
-		const sortHightToLow = () =>
-			products
-				.sort((a, b) => parseFloat(a.price) - parseFloat(b.price))
-				.reverse();
-
-		const sortLowToHigh = () =>
-			products.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
-
-		const sortAlphbetically = () =>
-			products.sort((a, b) => a.name.localeCompare(b.name));
-
-		const sortPopularity = () => {
-			console.log("Calculate average popularity");
-		};
-
-		return (
-			<div className="Dropdown">
-				<button onClick={handleBtnClick}>Sort by</button>
-				{isOpenSortBy && (
-					<div>
-						{menuItems.map(menuItem => (
-							<div className="menuItem" key={menuItem}>
-								{menuItem}
-							</div>
-						))}
-					</div>
-				)}
-			</div>
-		);
-	}
+	useEffect(() => {
+		getProductsByActiveProductCategory();
+	}, [activeProductCategory]);
 
 	return (
 		<div>
-			<div>
-				<div
-					style={{
-						display: "flex",
-						justifyContent: "space-between"
-					}}>
-					<div>
-						<button
-							className={style.filterBtn}
-							onClick={() => toggleFilterMenu()}>
-							<FontAwesomeIcon icon="filter" />
-						</button>
-						{filterMenuVisible && (
-							<div>
-								<p>Products For</p>
-								<div
-									style={{
-										height: "30rem",
-										overflowY: "scroll",
-										width: "100%",
-										paddingRight: "4rem"
-									}}>
-									{menuCategories.map(({ title, submenu }) => (
-										<SubMenus title={title} subMenu={submenu} />
-									))}
-								</div>
-							</div>
-						)}
-					</div>
-					<div>
-						<Dropdown />
-					</div>
-				</div>
-			</div>
+			<FilterMenu />
+			<SortMenu />
+
 			<div className={style["products-container"]}>
-				{firstLevelState ? (
-					<FilteredProducts />
-				) : (
-					<div
-						style={{
-							display: "flex",
-							flexWrap: "wrap"
-						}}>
-						{products.map(product => (
-							<div style={{ width: "50%" }}>
-								<Card title={product.name} price={product.price} />
+				<Link to="/cart">CART</Link>
+				{filteredProducts
+					? filteredProducts.map(product => (
+							<div style={{ width: "45%" }}>
+								<Card
+									id={product.id}
+									title={product.name}
+									price={product.price}
+								/>
 							</div>
-						))}
-					</div>
-				)}
+					  ))
+					: products &&
+					  products.map(product => (
+							<div style={{ width: "45%" }}>
+								<Card
+									id={product.id}
+									title={product.name}
+									price={product.price}
+								/>
+							</div>
+					  ))}
 			</div>
 		</div>
 	);

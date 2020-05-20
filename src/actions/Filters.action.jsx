@@ -1,24 +1,22 @@
 import * as actionType from "./Filters.actionType";
 
-// const sortByPrice = value => {
-// 	return { type: actionType.SORT_BY_PRICE, payload: value };
-// };
-
-// const filterByPrice = value => {
-// 	return { type: actionType.FILTER_BY_PRICE, payload: value };
-// };
-
-// const sortAlphabetically = value => {
-// 	return { type: actionType.SORT_ALPHABETICALLY, payload: value };
-// };
-
-const getCategories = categories => {
-	return { type: actionType.LOAD_DATA, payload: categories };
+const getActiveSortingOption = activeOption => {
+	return {
+		type: actionType.SORT_BY,
+		payload: activeOption
+	};
 };
 
+const getCategories = categories => {
+	return { type: actionType.GET_CATEGORIES, payload: categories };
+};
+
+// const addFilterCategory = categories => ({
+// 	type: "ADD_FILTER",
+// 	payload: categories
+// });
+
 export default {
-	// sortByPrice,
-	// filterByPrice,
-	// sortAlphabetically,
-	getCategories
+	getCategories,
+	getActiveSortingOption
 };
