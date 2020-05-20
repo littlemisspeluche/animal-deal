@@ -6,6 +6,7 @@ import "./App.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faFilter } from "@fortawesome/free-solid-svg-icons";
+import Cart from "./components/Cart";
 
 library.add(faBars, faFilter);
 
@@ -18,6 +19,9 @@ function App() {
 				</Route>
 				<Route exact path="/products">
 					<Products />
+				</Route>
+				<Route exact path="/cart">
+					<Cart />
 				</Route>
 			</Switch>
 		</Router>

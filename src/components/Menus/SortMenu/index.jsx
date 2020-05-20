@@ -3,42 +3,54 @@ import { useSelector, useDispatch } from "react-redux";
 import actions from "../../../actions";
 
 export default function SortMenu() {
-	const { ascPrice, descPrice, ascName, ascPopularity } = useSelector(
-		state => state.filter
-	);
-
-	const productJSON = require("../../../data/Products.json");
+	const { activeOption } = useSelector(state => state.filters);
 
 	const dispatch = useDispatch();
 
-	const { data } = productJSON;
+	const { products, filteredProducts } = useSelector(state => state.products);
 
-	const { products } = useSelector(state => state.products);
+	const sortByPriceAsc =
+		(filteredProducts &&
+			filteredProducts.slice().sort((a, b) => a.price - b.price)) ||
+		(products && products.slice().sort((a, b) => a.price - b.price));
+
+	const sortByPriceDesc =
+		(filteredProducts &&
+			filteredProducts.slice().sort((a, b) => b.price - a.price)) ||
+		(products && products.slice().sort((a, b) => b.price - a.price));
+
+	const handleSortProducts = () => {
+		if (activeOption) {
+			if (activeOption === "priceASC") {
+				dispatch(actions.products.getFilteredProducts(sortByPriceAsc));
+			} else if (activeOption === "priceDESC") {
+				dispatch(actions.products.getFilteredProducts(sortByPriceDesc));
+			}
+		}
+	};
 	useEffect(() => {
-		dispatch(actions.products.getProducts(data));
-	}, []);
-
-	const sortByPriceAsc = () =>
-		products && products.slice().sort((a, b) => a.price - b.price);
-
-	const sortByPriceDesc = () =>
-		products && products.sort((a, b) => a.price - b.price).reverse();
+		handleSortProducts();
+	}, [activeOption]);
 
 	return (
 		<div>
-			<select
-				onChange={e => {
-					console.log(e.target.value);
-				}}>
-				<option value="" disabled selected>
-					Sort by
-				</option>
+			<form>
+				<select
+					onChange={event => {
+						dispatch(
+							actions.filters.getActiveSortingOption(event.target.value)
+						);
+					}}>
+					<option value="" selected disabled>
+						Sort by
+					</option>
 
-				<option value={"priceASC"}>Price high to low</option>
-				<option value={"priceDESC"}>Price low to high</option>
-				<option value={"alphabetically"}>Name</option>
-				<option value={"popularity"}>Popularity</option>
-			</select>
+					<option value={"priceDESC"}> Price high to low</option>
+					<option value={"priceASC"}>Price low to high</option>
+					<option value={"alphabetically"}>Name</option>
+					<option value={"popularity"}>Popularity</option>
+				</select>
+			</form>
 		</div>
 	);
 }

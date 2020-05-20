@@ -20,8 +20,6 @@ export default function Cards() {
 		});
 	};
 
-	// const { activeSortingMethod } = useSelector(state => state.filter);
-
 	if (activeAnimalType && activeProductType && activeProductCategory) {
 		const filterByProductCategory = products.filter(obj => {
 			return (
@@ -30,7 +28,7 @@ export default function Cards() {
 				obj.product_data.product_category === activeProductCategory
 			);
 		});
-		return <CardsContainer filteredList={filterByProductCategory} />;
+		return filterByProductCategory;
 	} else if (activeAnimalType && activeProductType) {
 		const filterByProductType = products.filter(obj => {
 			return (
@@ -38,12 +36,37 @@ export default function Cards() {
 				obj.product_data.animal_type === activeAnimalType
 			);
 		});
-		return <CardsContainer filteredList={filterByProductType} />;
+		return filterByProductType;
 	} else if (activeAnimalType) {
 		const filterByAnimalType = products.filter(obj => {
 			return obj.product_data.animal_type === activeAnimalType;
 		});
-		return <CardsContainer filteredList={filterByAnimalType} />;
+		return filterByAnimalType;
 	}
-	return <CardsContainer filteredList={products} />;
+	return products;
 }
+
+// if (activeAnimalType && activeProductType && activeProductCategory) {
+// 	const filterByProductCategory = products.filter(obj => {
+// 		return (
+// 			obj.product_data.product_type === activeProductType &&
+// 			obj.product_data.animal_type === activeAnimalType &&
+// 			obj.product_data.product_category === activeProductCategory
+// 		);
+// 	});
+// 	return <CardsContainer filteredList={filterByProductCategory} />;
+// } else if (activeAnimalType && activeProductType) {
+// 	const filterByProductType = products.filter(obj => {
+// 		return (
+// 			obj.product_data.product_type === activeProductType &&
+// 			obj.product_data.animal_type === activeAnimalType
+// 		);
+// 	});
+// 	return <CardsContainer filteredList={filterByProductType} />;
+// } else if (activeAnimalType) {
+// 	const filterByAnimalType = products.filter(obj => {
+// 		return obj.product_data.animal_type === activeAnimalType;
+// 	});
+// 	return <CardsContainer filteredList={filterByAnimalType} />;
+// }
+// return <CardsContainer filteredList={products} />;

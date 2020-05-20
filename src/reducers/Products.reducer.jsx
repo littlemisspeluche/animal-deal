@@ -4,7 +4,9 @@ const INITIAL_STATE = {
 	products: null,
 	activeAnimalType: null,
 	activeProductType: null,
-	activeProductCategory: null
+	activeProductCategory: null,
+	sortedProductsList: null,
+	filteredProducts: null
 };
 
 export default (state = INITIAL_STATE, action) => {
@@ -29,6 +31,16 @@ export default (state = INITIAL_STATE, action) => {
 			return {
 				...state,
 				activeProductCategory: action.payload
+			};
+		case "SORTED_PRODUCTS":
+			return {
+				...state,
+				sortedProductsList: action.payload
+			};
+		case "FILTERED_PRODUCTS":
+			return {
+				...state,
+				filteredProducts: action.payload
 			};
 
 		default:
