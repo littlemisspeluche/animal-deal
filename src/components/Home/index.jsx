@@ -1,24 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import style from "./Home.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import BannerCarousel from "../Carousels/BannerCarousel";
 import CardsCarousel from "../Carousels/CardsCarousel";
 import Card from "../Card/Card";
-import ShopBanner from "../ShopBanner/ShopBanner";
+import ShopBanner from "../ShopBanner";
 import Button from "../Button/Button";
 import Footer from "../Footer/Footer";
+import Header from "../Header";
 
 export default function Home() {
 	return (
 		<div className={style.container}>
-			<div className={style.header}>
-				<div className={style.menu}>
-					<FontAwesomeIcon icon="bars" />
-				</div>
-				<div className={style.logo}>
-					<p>LOGO</p>
-				</div>
-			</div>
+			<Header />
 
 			<div className={style["banner-slider"]}>
 				<BannerCarousel>

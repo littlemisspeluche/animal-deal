@@ -5,11 +5,11 @@ import _ from "lodash";
 import style from "./SortMenu.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function SortMenu() {
+	const [menuOpen, setMenuOpen] = useState(false);
 	const { activeOption } = useSelector(state => state.filters);
+	const { products, filteredProducts } = useSelector(state => state.products);
 
 	const dispatch = useDispatch();
-
-	const { products, filteredProducts } = useSelector(state => state.products);
 
 	const sortByPriceAsc =
 		(filteredProducts &&
@@ -72,38 +72,50 @@ export default function SortMenu() {
 	return (
 		<div>
 			<div>
-				<ul className={style["btn-container"]}>
-					<li id={style["sort-btn"]}>
+				<ul
+					className={style["btn-container"]}
+					onClick={() => setMenuOpen(!menuOpen)}>
+					<li className={style["sort-btn"]} id={style["sort-btn"]}>
 						sort by
 						<FontAwesomeIcon icon="sort" />
-						<ul>
-							<li
-								onClick={() =>
-									dispatch(actions.filters.getActiveSortingOption("priceDESC"))
-								}>
-								Price high to low
-							</li>
-							<li
-								onClick={() =>
-									dispatch(actions.filters.getActiveSortingOption("priceASC"))
-								}>
-								Price low to high
-							</li>
-							<li
-								onClick={() =>
-									dispatch(
-										actions.filters.getActiveSortingOption("alphabetically")
-									)
-								}>
-								Name
-							</li>
-							<li
-								onClick={() =>
-									dispatch(actions.filters.getActiveSortingOption("popularity"))
-								}>
-								Popularity
-							</li>
-						</ul>
+						{menuOpen && (
+							<ul className={style.options}>
+								<li
+									className={style["sort-btn"]}
+									onClick={() =>
+										dispatch(
+											actions.filters.getActiveSortingOption("priceDESC")
+										)
+									}>
+									Price high to low
+								</li>
+								<li
+									className={style["sort-btn"]}
+									onClick={() =>
+										dispatch(actions.filters.getActiveSortingOption("priceASC"))
+									}>
+									Price low to high
+								</li>
+								<li
+									className={style["sort-btn"]}
+									onClick={() =>
+										dispatch(
+											actions.filters.getActiveSortingOption("alphabetically")
+										)
+									}>
+									Name
+								</li>
+								<li
+									className={style["sort-btn"]}
+									onClick={() =>
+										dispatch(
+											actions.filters.getActiveSortingOption("popularity")
+										)
+									}>
+									Popularity
+								</li>
+							</ul>
+						)}
 					</li>
 				</ul>
 			</div>

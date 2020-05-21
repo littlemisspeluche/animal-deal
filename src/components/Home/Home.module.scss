@@ -1,15 +1,3 @@
-.header {
-	display: flex;
-	justify-content: space-between;
-	margin: 0 0.5rem;
-
-	.menu {
-		line-height: 3rem;
-	}
-
-	.logo {}
-}
-
 .banner-slider {
 	padding-bottom: 30px;
 	position: relative;
@@ -84,4 +72,8 @@
 	}
 
 	.subscribe {}
+}
+
+li.react-multi-carousel-item {
+	height: auto;
 }

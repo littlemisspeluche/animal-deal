@@ -43,7 +43,7 @@ export default function CardsCarousel({ children }) {
 			slidesToSlide={1}
 			swipeable
 			keyBoardControl={false}>
-			{children}
+			<div>{children}</div>
 		</Carousel>
 	);
 }
