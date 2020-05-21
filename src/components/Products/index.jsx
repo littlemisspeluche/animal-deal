@@ -6,7 +6,8 @@ import FilterMenu from "../Menus/FilterMenu";
 import SortMenu from "../Menus/SortMenu";
 import Card from "../Card/Card";
 import { Link } from "react-router-dom";
-
+import Header from "../Header";
+import Footer from "../Footer/Footer";
 export default function Products() {
 	const productJSON = require("../../data/Products.json");
 
@@ -22,6 +23,7 @@ export default function Products() {
 		activeProductCategory,
 		filteredProducts
 	} = useSelector(state => state.products);
+	const { isMenuOpen } = useSelector(state => state.filters);
 	useEffect(() => {
 		dispatch(actions.products.getProducts(data));
 		dispatch(actions.cart.getProducts(data));
@@ -77,35 +79,39 @@ export default function Products() {
 	}, [activeProductCategory]);
 
 	return (
-		<div className={style.container}>
-			<div className={style.header}>
-				<FilterMenu />
-				<SortMenu />
-			</div>
+		<div>
+			<div className={style.container}>
+				<Header />
+				<div className={style.header}>
+					<FilterMenu />
+					<SortMenu />
+				</div>
+				{/* <Link to="/cart">CART</Link> */}
 
-			<div className={style["products-container"]}>
-				<Link to="/cart">CART</Link>
-				{filteredProducts
-					? filteredProducts.map(product => (
-							<div style={{ width: "45%" }}>
-								<Card
-									id={product.id}
-									title={product.name}
-									price={product.price}
-								/>
-							</div>
-					  ))
-					: products &&
-					  products.map(product => (
-							<div style={{ width: "45%" }}>
-								<Card
-									id={product.id}
-									title={product.name}
-									price={product.price}
-								/>
-							</div>
-					  ))}
+				<div className={style["products-container"]}>
+					{filteredProducts
+						? filteredProducts.map(product => (
+								<div style={{ width: "45%" }}>
+									<Card
+										id={product.id}
+										title={product.name}
+										price={product.price}
+									/>
+								</div>
+						  ))
+						: products &&
+						  products.map(product => (
+								<div style={{ width: "45%" }}>
+									<Card
+										id={product.id}
+										title={product.name}
+										price={product.price}
+									/>
+								</div>
+						  ))}
+				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 }

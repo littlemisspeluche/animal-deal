@@ -4,53 +4,42 @@ ul.btn-container {
   padding-left: 0;
 }
 
-li#sort-btn {
+li#sort-btn.sort-btn {
   display: flex;
   justify-content: space-between;
   font-size: 0.8rem;
   color: #C4C4C4;
-  padding: 0.25rem 0.45rem;
+  padding: 0.15rem 0.45rem;
 }
 
-li#sort-btn svg {
+li#sort-btn.sort-btn svg {
   margin-top: 0.05rem;
-  font-size: 0.9rem;
 }
 
-li {
+li.sort-btn {
   border: 1px solid #C4C4C4;
-  width: 169px;
-  height: 26px;
+  width: 139px;
+  height: 20px;
   padding: 0.2rem;
   position: relative;
   text-decoration: none;
   transition-duration: 0.5s;
-
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 
-ul.btn-container li ul {
-  width: 169px;
-  opacity: 0;
-  min-width: 5rem;
+ul.btn-container li.sort-btn ul.options {
+  background-color: #fff;
+  border: 1px solid #C4C4C4;
+  width: 139px;
   position: absolute;
   transition: all 0.5s ease;
-  margin-top: 1.3rem;
+  margin-top: 1rem;
   left: -1px;
+  padding: 0.3rem;
+  z-index: 999;
+
 }
 
-ul li:hover>ul,
-ul li:focus-within>ul,
-ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-ul li ul li {
-
-  border-top: 0;
+ul.btn-container li#sort-btn.sort-btn ul.options li.sort-btn {
+  border: none;
 }

@@ -1,4 +1,19 @@
 .menu-button {
   border: none;
   background: none;
+  position: absolute;
+  top: 4.3rem;
+
+  &:focus {
+    outline: 0;
+  }
+
+}
+
+.menu-categories {
+
+  padding-top: 1rem;
+  width: 86.3%;
+  padding-left: 0.5rem;
+  background: white;
 }
