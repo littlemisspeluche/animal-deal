@@ -20,7 +20,7 @@ export default function FilterMenu() {
 	};
 
 	return (
-		<div>
+		<div className={style.container}>
 			<button
 				className={style["menu-button"]}
 				onClick={() => toggleFiltersMenu()}>

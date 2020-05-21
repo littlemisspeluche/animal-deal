@@ -80,8 +80,9 @@ export default function Products() {
 
 	return (
 		<div>
+			<Header />
+			<div className={style.banner}></div>
 			<div className={style.container}>
-				<Header />
 				<div className={style.header}>
 					<FilterMenu />
 					<SortMenu />
