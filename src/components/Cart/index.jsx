@@ -2,10 +2,26 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import actions from "../../actions";
 import style from "./Cart.module.scss";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Cart() {
 	const dispatch = useDispatch();
 
-	const { addedItems } = useSelector(state => state.cart);
+	const { addedItems, total } = useSelector(state => state.cart);
+
+	//to remove the item completely
+	const handleRemove = id => {
+		dispatch(actions.cart.removeItem(id));
+	};
+
+	//to add the quantity
+	const handleAddQuantity = id => {
+		dispatch(actions.cart.addQuantity(id));
+	};
+	//to substruct from the quantity
+	const handleSubtractQuantity = id => {
+		dispatch(actions.cart.subtractQuantity(id));
+	};
 
 	return (
 		<div className={style.container}>
@@ -20,19 +36,46 @@ export default function Cart() {
 								</div>
 								<div className={style["item-desc"]}>
 									<span className={style.title}>{item.name}</span>
-									<p>{item.description}</p>
+									<p>{item.description.split(".")[0]}.</p>
 									<p>
-										<b>Price: {item.price}$</b>
+										<b>Price: {item.price * item.quantity}$</b>
 									</p>
-									<p>
-										<b>Quantity: {item.quantity}</b>
-									</p>
-									<div className={style["quantity-container"]}></div>
-									<button className={style["remove-btn"]}>Remove</button>
+
+									<div className={style["quantity-container"]}>
+										<Link to="/cart">
+											<FontAwesomeIcon
+												icon="angle-up"
+												onClick={() => {
+													handleAddQuantity(item.id);
+												}}
+											/>
+										</Link>
+										<p>
+											<b>Quantity: {item.quantity}</b>
+										</p>
+										<Link to="/cart">
+											<FontAwesomeIcon
+												icon="angle-down"
+												onClick={() => {
+													handleSubtractQuantity(item.id);
+												}}
+											/>
+										</Link>
+									</div>
+									<button
+										className={style["remove-btn"]}
+										onClick={() => handleRemove(item.id)}>
+										Remove
+									</button>
 								</div>
 							</li>
 						))}
 				</ul>
+			</div>
+			<div>
+				<p>
+					<b>Total: {total.toFixed(2)} $</b>
+				</p>
 			</div>
 		</div>
 	);

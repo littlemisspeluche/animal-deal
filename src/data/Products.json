@@ -28,13 +28,13 @@
       "original_price": 54.99,
       "description": "Make mealtimes easy, tasty and nutritious with the CANIDAE All Life Stages Multi-Protein Formula Dry Dog Food. This vet-formulated recipe is speciﬁcally designed for dogs of all breeds, sizes and ages. It features premium ingredients and optimum protein, and is complete free of corn, wheat and soy for the wholesome nutrition your dog deserves. This all-in-one approach to feeding makes mealtime for multi-dog households much simpler than dealing with multiple bags of different foods. Single-dog households will also enjoy the beneﬁts—no more guessing or switching based on your dog’s age, breed, or size. One bag is all you need for the great tasting nutrition your furry friend loves.",
       "weight": 15,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "dog",
         "product_type": "food",
@@ -47,7 +47,7 @@
       "image": ["https://i.ibb.co/RjDzZbh/Taste-of-the-Wild-High-Prairie-Grain-Free-Dry-Dog-Food.jpg", "https://i.ibb.co/CP39fFZ/Taste-of-the-Wild-High-Prairie-Grain-Free-Dry-Dog-Food-back.jpg"],
       "price": 46.54,
       "original_price": 48.99,
-      "description": "Nourish your canine companion with the balanced diet nature intended with Taste of the Wild High Prairie Grain-Free Dry Dog Food! Formulated with novel proteins including buffalo and bison, this grain-free recipe includes peas and sweet potatoes that deliver the highly-digestible energy your active pup needs, along with natural antioxidant support from real fruits and vegetables and dried chicory root for prebiotic support and healthy digestion. Essential minerals are chelated with amino acids to optimize their absorption and ensure maximum benefit, for complete and balanced nutrition with a taste of the wild your furry friend constantly craves!",
+      "description": "Nourish your canine companion with the balanced diet nature intended with Taste of the Wild High Prairie Grain-Free Dry Dog Food. Formulated with novel proteins including buffalo and bison, this grain-free recipe includes peas and sweet potatoes that deliver the highly-digestible energy your active pup needs, along with natural antioxidant support from real fruits and vegetables and dried chicory root for prebiotic support and healthy digestion. Essential minerals are chelated with amino acids to optimize their absorption and ensure maximum benefit, for complete and balanced nutrition with a taste of the wild your furry friend constantly craves!",
       "weight": 14,
       "product_reviews": [{
           "author_name": "GayleH",
@@ -135,13 +135,13 @@
       "original_price": 48.99,
       "description": "Formulated for the health and well-being of dogs, BLUE Life Protection Formula Dry Dog Food is made with the finest natural ingredients enhanced with vitamins and minerals. It contains the ingredients you'll love feeding as much as they'll love eating. BLUE Life Protection Formula dog food is a product of the Blue Buffalo company. Based in the United States, Blue Buffalo makes premium-quality pet foods featuring real meat, fruit and vegetables. REAL MEAT FIRST: Blue Buffalo foods always feature real meat as the first ingredient. High - quality protein from real chicken helps your dog build and maintain healthy muscles.Plus they contain wholesome whole grains, garden veggies and fruit. FOR ADULT DOGS: BLUE Life Protection Formula adult dog food contains essential proteins and carbohydrates to help meet the energy needs of adult dogs, and features omega 3 & 6 fatty acids to promote a shiny coat and healthy skin. WITH LIFESOURCE BITS: This formula contains BLUE 's exclusive LifeSource Bits - a precise blend of antioxidants, vitamins and minerals carefully selected by holistic veterinarians and animal nutritionists to support immune system health, life stage requirements, and a healthy oxidative balance. A NATURAL DOG FOOD: BLUE dry dog food is made with the finest natural ingredients enhanced with vitamins and minerals.BLUE contains NO chicken(or poultry) by - product meals, corn, wheat, soy, artificial flavors or preservatives. Contains one(1) 30 lb. Bag of BLUE Life Protection Formula Adult Dry Dog Food, Chicken and Brown Rice ",
       "weight": 30,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "dog",
         "product_type": "food",
@@ -156,13 +156,13 @@
       "original_price": 49.98,
       "description": "",
       "weight": 30,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "dog",
         "product_type": "food",
@@ -177,13 +177,13 @@
       "original_price": 37.99,
       "description": "Formulated for the health and well-being of puppies, Blue Life Protection Formula is made with the finest natural ingredients and features: Delicious, protein - rich, Deboned Chicken. Wholesome whole grains, garden veggies and fruit. NO chicken(or poultry) by - product meals. NO corn, wheat or soy. NO artificial colors, flavors or preservatives. Because puppyhood is such an important stage in any dog 's life, Blue Life Protection Formula features ingredients that support the healthy growth and development of small-breed puppies.",
       "weight": 15,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "dog",
         "product_type": "food",
@@ -198,13 +198,13 @@
       "original_price": 54.98,
       "description": "Blue Basics Turkey & Potato Recipe is a limited-ingredient diet formulated to minimize food sensitivities some dogs experience, while maximizing the nutritional value they receive. And because it's Blue, it's made with only the finest natural ingredients: Deboned Turkey, a single animal protein source. Easily - digestible carbohydrates like peas and potatoes. Pea Fiber & Pumpkin to support gentle digestion. Omega 3 & 6. for skin & coat health. NO chicken(or poultry) by - product meals. Because puppyhood is such an important stage in any dog 's life, Blue Basics for Puppies features ingredients that support healthy growth and development. NO corn, wheat, soy, dairy or eggs ",
       "weight": 24,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "dog",
         "product_type": "food",
@@ -219,13 +219,13 @@
       "original_price": 39.87,
       "description": "Formulated for the health and well-being of dogs, BLUE Life Protection Formula Dry Dog Food is made with the finest natural ingredients enhanced with vitamins and minerals. It contains the ingredients you'll love feeding as much as they'll love eating. BLUE Life Protection Formula dog food is a product of the Blue Buffalo company. Based in the United States, Blue Buffalo makes premium-quality pet foods featuring real meat, fruit and vegetables. REAL MEAT FIRST: Blue Buffalo foods always feature real meat as the first ingredient.High - quality protein from deboned whitefish helps your dog build and maintain healthy muscles.Plus they contain wholesome whole grains, garden veggies and fruit. FOR ADULT DOGS: BLUE Life Protection Formula adult dog food contains essential proteins and carbohydrates to help meet the energy needs of adult dogs, and features omega 3 & 6 fatty acids to promote a shiny coat and healthy skin. WITH LIFESOURCE BITS: This formula contains BLUE 's exclusive LifeSource Bits - a precise blend of antioxidants, vitamins and minerals carefully selected by holistic veterinarians and animal nutritionists to support immune system health, life stage requirements, and a healthy oxidative balance. A NATURAL DOG FOOD: BLUE dry dog food is made with the finest natural ingredients enhanced with vitamins and minerals.BLUE contains NO chicken(or poultry) by - product meals, corn, wheat, soy, artificial flavors or preservatives. Contains one(1) 30 lb.Bag of BLUE Life Protection Formula Adult Dry Dog Food, Fish and Brown Rice ",
       "weight": 30,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "dog",
         "product_type": "food",
@@ -240,13 +240,13 @@
       "original_price": 17.09,
       "description": "Every pet parent wants what's best for their baby. That's why Baby BLUE Healthy Growth Formula for Kittens features high-quality, natural ingredients enhanced with vitamins, minerals and other nutrients to get your new furry friend started on the right paw. Starting with real chicken, plus brown rice, garden fruits and vegetables, this recipe features the ingredients you can trust to keep your kitten powered with the wholesome nutrition needed for healthy growth and play. REAL CHICKEN FIRST: This kitten food features high - quality protein from real chicken to support healthy muscle development.Plus, it contains wholesome whole grains, garden veggies and fruit. FORMULATED FOR KITTENS: Baby BLUE kitten foods contain DHA and ARA, important fatty acids found in mother 's milk, plus choline to support cognitive function and retinal health. WITH LIFESOURCE BITS: All BLUE dry cat foods contain LifeSource Bits - a precise blend of antioxidants, vitamins and minerals to support your kitten 's healthy immune system. A NATURAL CAT FOOD: Baby BLUE kitten foods feature the finest natural ingredients enhanced with vitamins, minerals and other nutrients.Plus, they contain NO chicken(or poultry) by - product meals, corn, wheat, soy, artificial flavors or preservatives ",
       "weight": 5,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "cat",
         "product_type": "food",
@@ -261,13 +261,13 @@
       "original_price": 16.64,
       "description": "At around 4 months old, a kitten's growth rate changes. With rising energy levels, developing immune and digestive systems, growing bones and muscles, and emerging teeth, older kittens have different needs than they did as a baby cat (1-4 months old). Royal Canin Thin Slices in Gravy Wet Food delivers the nutritional precision your kitten needs to reach their most magnificent potential. Thin Slices in Gravy wet food formulated for the second stage of kittenhood(between 4 months to 1 year); for younger cats, try Royal Canin Mother & Babycat. Made with the optimal ratio of protein, fats, and carbohydrates to meet the nutritional energy needs of a maturing kitten 's playful energy. An innovative blend of antioxidants supports a kitten 's developing immune system defenses as they continue to grow. Promotes healthy growth and digestion with digestible proteins, fiber, and prebiotics. Small, thin slices in gravy texture is easy for a new kitten to eat as they transition to solid foods; a perfect complement to Royal Canin Kitten Dry Kibble ",
       "weight": 3,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "cat",
         "product_type": "food",
@@ -282,13 +282,13 @@
       "original_price": 5.99,
       "description": "Feline Greenies Smartbites Hairball Control Treats for Cats are the perfect treat to keep your cat purring all day long. Designed by veterinarians and created with GREENIES FIBERBLEND Formula, these treats help minimize and control hairball formation and support healthy digestion in your adult cat when fed in conjunction with a hairball control diet. Featuring a mix of crunchy and creamy textures, these cat snacks have less than 2 calories, and added vitamins, minerals, and other nutrients for a nutritionally complete and balanced snack. Plus, these irresistible little treats come in a delectable chicken flavor and are made with natural ingredients, plus vitamins. These FELINE GREENIES are the healthy, tasty hairball control treats your cat will love. Minimizes hairball formation and supports healthy digestion with GREENIES FIBERBLEND formula for adult cats when fed with a hairball control diet. Made with natural ingredients, plus vitamins, minerals, and other nutrients for a nutritionally complete and balanced snack. With less than 2 calories per treat, your cat will love each and every bite, and you 'll feel great rewarding them. Crunchy on the outside and soft on the inside, your cat will devour these cat snacks and their delectable dual - texture. Designed by veterinarians to help healthy digestion when fed in conjunction with a hairball diet ",
       "weight": 4.6,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "cat",
         "product_type": "food",
@@ -303,13 +303,13 @@
       "original_price": 4.47,
       "description": "Tasty and healthy the perfect complement to your dog's wholesome diet Natural Blue Health Bars feature delectable flavors and crunchy textures your dog will love munching away at - while they're helping to clean his teeth, too. But here's the best part: you can feel good knowing he's eating healthy too. Blue Health Bars are also oven - baked for old - fashioned goodness. Fortified with Omega 3 fatty acids and important antioxidants. These ingredients help your dog maintain a healthy immune system. Contains no corn, wheat or soy. Made with wholesome whole grains and nutritious vegetables ",
       "weight": 16,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "dog",
         "product_type": "food",
@@ -324,13 +324,13 @@
       "original_price": 15.99,
       "description": "John Paul Pet Oatmeal Dog Shampoo. Formulated to help relieve skin irritations and promote healing. Moisturizes dry, itchy skin with pure oatmeal, aloe vera gel and sweet almond oil. Sensitive skin formula. Cruelty - free, tested on humans first ",
       "weight": 473.2,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "dog",
         "product_type": "hygiene",
@@ -345,13 +345,13 @@
       "original_price": 19.99,
       "description": "Safely remove stubborn knots and mats with the Four Paws Magic Coat Professional Series Total Knot Destroyer! This knot comb for dogs is a total solution that was thoughtfully designed to remove any knot-even in the most hard-to-reach, sensitive areas. This multi-purpose dog grooming comb features a recessed cutting blade to thin out excess hair and safely eliminate tough mats and knots. To reach even deeper knots, this dog dematter includes a comb extender for more precise grooming, especially in longer-haired coats! With a handle ergonomically designed for comfort, this dog tangle comb is great for both dogs and cats! Safe, easy, precise. Effectively works through tangles. Combs and cuts knots, tangles & mats ",
       "weight": 0,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "dog",
         "product_type": "hygiene",
@@ -366,13 +366,13 @@
       "original_price": 9.99,
       "description": "Millers Forge Pet Nail Clipper. Essential grooming accessory for your pet s health and happiness. Plier - style dog nail clippers help keep nails short. Heat - treated steel pet nail clippers. Different sizes available. for dogs of all sizes ",
       "weight": 0,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "dog",
         "product_type": "hygiene",
@@ -387,13 +387,13 @@
       "original_price": 24.49,
       "description": "Housebreaking a dog, or caring for an incontinent pet isn't always easy. Simple Solution Extra Large Dog Training Pads will help take the stress and mess out of your life. The attractant will make sure your pup finds the right spot to go, and our InstaShield Technology neutrilizes odors while keeping it all contained up to 7 cups of liquid! EASY DOES IT - Simple Solution Extra Large Dog Training Pads are 100 % more absorbent than our original economy pads.Imagine how easy it will be to house train a puppy with a pad that can absorb that much liquid. LARGER IS BETTER - These training pads are 28 x 30 inches, making them 60 % larger than standard pads.That means little dogs can use them multiple times before you have to change them, and bigger dogs will have all the room they need to do their work. WE HAVE THE TECHNOLOGY - Simple Solution training pads contain InstaShield Technology.We developed this technology to contain more liquid, 7 cups worth, while neutralizing unpleasant odors. WORKING SMARTER - Our 3 - in -1 Attractant works in a systematic way to entice your dog to approach the pad, engage with the pad, and finally encourage your dog to use the pad not your floor. KNOW AT A GLANCE - Wouldn 't it be nice if there was some way to know for sure that it is time to change the pad? Well, there is! The Wetness Indicator turns teal to let you know that your furbaby has successfully used the pad.",
       "weight": 0,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "dog",
         "product_type": "training pads",
@@ -408,13 +408,13 @@
       "original_price": 14.99,
       "description": "Spot Naturals Jute dog toys are made with naturally strong jute fabric and lightly stuffed with 100% cotton fiber. Durable enough to withstand your dogs urge to chew, yet soft enough to cuddle too. Made with natural leather and jute fabric. Puncture proof squeaker included for added fun. Encourages good chewing habits. All natural leather and jute fused fabrics(2 layer protection). 100 % natural cotton fill. Made with safe non - toxic natural materials. Satisfaction Guarantee",
       "weight": 0,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "dog",
         "product_type": "toys",
@@ -429,13 +429,13 @@
       "original_price": 14.99,
       "description": "The Good2Go Reversible Dog Raincoat in Yellow features a 2-in-1 design so you can opt for an adorable polka dot print or a sunny canary color with a printed trim. Reflective details trim this water-resistant jacket so your pup can standout during low visibility. Yellow Reversible Dog Raincoat from Good2Go. Water - resistant dog coat. Reflective details. Snap button allows you to pin back hood. Leash port in back allows access to dog 's collar. Flap over leash port keeps it shielded when not in use hook and loop closure ",
       "weight": 0,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "dog",
         "product_type": "apparel",
@@ -450,13 +450,13 @@
       "original_price": 21.99,
       "description": "The Harmony Silicone Double Diner Dog Bowl serves up food and water in a station designed to stay in place for them, while also helping protect your floors from spills and drips. Once mealtime is done, the entire set can pop into your dishwasher for hassle-free clean. Silicone Double Diner Dog Bowl Set from Harmony. Features an easy - to - clean design that also helps protect floors from spills. Dishwasher safe, stainless - steel bowl inserts and silicone double diner base for your convenience. No - slip bottom helps keep bowl in place for eager eaters ",
       "weight": 0,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "dog",
         "product_type": "accessories",
@@ -471,13 +471,13 @@
       "original_price": 74.99,
       "description": "The Good2Go Expandable Pet Carrier gives your dog or cat room to stretch out thanks to a zip-out window that provides up to 70% more leg and elbow room. This tote is feature-loaded with a removable inner fleece pad, shoulder carrying strap, interior tether, and safe-locking zippers. When zipped closed, the window is protected from chewers by an interior barrier. Expandable Pet Carrier from Good2Go. Unzips to be 70 % larger. Side and top entry points, carry handle, and removable shoulder strap for convenience. Pet comfort features include mesh windows for ventilation and a washable fleece sleep surface. Security features include safe - locking zippers, an interior tether, and a seatbelt strap ",
       "weight": 0,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "dog",
         "product_type": "accessories",
@@ -492,13 +492,13 @@
       "original_price": 12.15,
       "description": "Bags on Board Doggie Clean-Up Bags, 140 count. Fits Bags on Board dispensers. Strong & durable. Leakproof dog poop disposable bags. Double - seal construction. Quick and hassle - free loading into poop bag dispensers ",
       "weight": 0,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "dog",
         "product_type": "accessories",
@@ -513,13 +513,13 @@
       "original_price": 90.99,
       "description": "The Harmony Cuddler Orthopedic Dog Bed in Blue is thoughtfully crafted for your four-legged family member to hit refresh in space that keeps their ongoing health in mind. This circular bed's bolstered shape features orthopedic memory foam for that extra boost of comfort that alleviates pressure points. With a more supportive surface, your pup can achieve a deeper, rejuvenating sleep that helps them rise and shine to happier days by your side. Cuddler Orthopedic Dog Bed in Blue from the Harmony. Cuddler silhouette ideal for pups that like to curl up or rest on their side. Reversible sleeping surface features an attractive textured blue quilted - weave or soft faux shearling. Removable, machine washable cover. Orthopedic memory foam provides superior support to relieve pressure points ",
       "weight": 0,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "dog",
         "product_type": "pet furniture",
@@ -534,13 +534,13 @@
       "original_price": 13.00,
       "description": "Enjoy the time you spend with your cat to the fullest when you use Purina Pro Plan LIVECLEAR Rinse Free Allergen Reducing dry shampoo for cats. Our foam cat shampoo has been shown to reduce the allergens in cat hair and dander safely and simply. This hypoallergenic shampoo is 99.8% natural and pH-balanced and features a fast-acting, easy-to-use cleansing foam. A pump dispenser makes application quick and convenient, and the waterless cat shampoo formula means there's no need to rinse. To target cat allergens at the source, also look to Purina Pro Plan LIVECLEAR dry cat food. This revolutionary formula, the first of its kind, uses a key protein in eggs to neutralize a common allergen in cat saliva, Fel D 1. It's been shown to reduce cat allergens in hair and dander by an average of 47% starting in the third week of daily feeding. To get the upper hand on cat allergens in your home, turn to the Purina Pro Plan LIVECLEAR line of dry cat shampoo and food. Rinse - free, dry shampoo for cats shown to reduce the allergens in cat hair and dander. Hypoallergenic shampoo formula cleanses gently and effectively 99.8 % natural shampoo formulated to meet your ingredient expectations. LIVECLEAR dry cat shampoo is pH balanced. Fast acting and convenient waterless cat shampoo. Part of the LIVECLEAR line of allergen - reducing pet products. Pump dispenser for easy application ",
       "weight": 250,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "cat",
         "product_type": "hygiene",
@@ -555,13 +555,13 @@
       "original_price": 10.99,
       "description": "The Well & Good Pink Cushion Slicker Cat Brush smooths out their coat while removing tangles and loose fur. Use this grooming tool regularly to strengthen your bond while making their natural shedding process a little easier. Pink Cushion Slicker Cat Brush from Well & Good. Designed for use on all coats. Gently detangles. Helps remove loose fur. Helps make the natural shedding process easier on you and your cat ",
       "weight": 0,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "cat",
         "product_type": "hygiene",
@@ -576,13 +576,13 @@
       "original_price": 39.99,
       "description": "The Well & Good Nail Grinder for Cats keeps their paws looking their best thanks to its efficient and replaceable sanding drum. An LED Light, a safety stop, and cover on this grooming tool all work together to provide optimal precision so you can confidently care for your feline's nails. Unlike traditional scissors or clippers, this electric nail grinder helps achieve smooth, rounded edges. LED light illuminates as you trim and smooth their nail for better precision. Includes 2 mandrels with 2 sanding drums. Requires AA batteries, sold separately. Nail Grinder for Cats from Well & Good. 1 - Speed tool at 6, 500 RPM. Safety stop and cover help protect your cat as you groom ",
       "weight": 0,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "cat",
         "product_type": "hygiene",
@@ -597,13 +597,13 @@
       "original_price": 20.99,
       "description": "Dr. Elsey's Precious Cat Ultra Scoopable Multi-Cat Litter. 99.9 % dust - free and uses heavy, non - tracking granules for less mess. Hypo - allergenic, contains no plant proteins. Contains no perfumes or deodorants. All - natural clumping kitty litter. Prevents moisture from reaching the bottom of litter box or tray. Ideal for sifting / mechanical litter boxes. Superior odor control ",
       "weight": 40,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "cat",
         "product_type": "litter",
@@ -618,13 +618,13 @@
       "original_price": 179.99,
       "description": "",
       "weight": 0,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "cat",
         "product_type": "litter",
@@ -639,13 +639,13 @@
       "original_price": 16.99,
       "description": "Rethink your take on cat litter with this Purina Tidy Cats BREEZE Spring Clean With Ammonia Blocker cat pads refill pack. Part of the Purina Tidy Cats BREEZE litter system (sold separately), these cat pads feature an Ammonia Blocker that's guaranteed to prevent ammonia odor for seven days for one cat, so your cat's litter area remains clean and inviting. The pads work quickly to absorb moisture and keep the litter box dry and your cats comfortable. Each of these cat pads for litter box odor control features a light spring fragrance, which leaves behind a pleasant scent. The disposable design makes it easy to clean your cat's litter system, so you spend less time scooping urine clumps. With their convenient setup, these cat pad refills offer effortless installation and removal, helping you to keep your cat's litter area tidy and ready for use. We're so confident you and your cats are going to love this BREEZE litter system, we offer a money-back satisfaction guarantee, no return needed. Satisfaction guarantee: Love the Tidy Cats BREEZE litter system, or your money back. Controls odors to leave your home smelling fresh and clean for one week for one cat. Pads lock in moisture so the litter box stays dry. Spring Clean fragrance offers a fresh scent.  Designed for multiple - cat households. Easy to install and remove. Ammonia Blocker is guaranteed to prevent ammonia odor. for seven days for one cat ",
       "weight": 18.24,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "cat",
         "product_type": "litter",
@@ -660,13 +660,13 @@
       "original_price": 16.99,
       "description": "You & Me Cat Scratch Post with Feather Toys. Neutral color fits with most existing decors. Surface of cat scratching post is 100 % scratchable. Two replaceable feather toys for added fun. Cat scratcher is essential for your cat s health and happiness ",
       "weight": 0,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "cat",
         "product_type": "toys",
@@ -681,13 +681,13 @@
       "original_price": 7.99,
       "description": "The Pink Pusheen Bandana is the perfect accessory for any cat! An adorable Super Pusheenicorn graphic with soft materials ensures that your kitty will be styling in comfort. Velcro fastener secures a snug fit. Soft, breathable material. Velcro fastener ensures a safe, snug fit for any cat. Adorable Super Pusheenicorn design. Fits neck sizes 7 in to 15 in ",
       "weight": 0,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "cat",
         "product_type": "apparel",
@@ -702,13 +702,13 @@
       "original_price": 10.99,
       "description": "The Harmony Stainless Steel Cat Diner features two machine washable bowls that nestle perfectly into a black elevated frame. The rubberized feet on this feeding station help keep it in place making it ideal for enthusiastic eaters. Stainless Steel Cat Diner from Harmony. Allows for a more comfortable eating posture thanks to its elevated design. Includes two machine washable, stainless steel bowls. Rubberized feet help keep it in place ",
       "weight": 0,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "cat",
         "product_type": "accessories",
@@ -723,13 +723,13 @@
       "original_price": 39.99,
       "description": "Finally a carrier that is designed specifically for cats! Cats feel comfortable walking into the wide, side-opening gate. The gate can be shut quickly, and smoothly, keeping you and your pet safe and happy. Large Opening is perfect for cats. Comfort grip handle & durable clasps. Sturdy, single - motion door lock. Folds flat for easy storage. Vet recommended. Holds pets up to 25 lbs. Easy to clean ",
       "weight": 0,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "cat",
         "product_type": "accessories",
@@ -744,13 +744,13 @@
       "original_price": 12.99,
       "description": "Cats appreciate a fresh-smelling litter box, and so do you. Nature's Miracle Just For Cats Litter Box Odor Destroyer works to eliminate tough litter box odors and remove airborne, fabric and hard-surface odors. Unlike many products that may simply mask unpleasant pet odors, this formula reacts with embedded litter box odors, destroying them on contact. Spray in the air or on surfaces such as litter boxes, litter box mats or anywhere your pet goes. The unscented formula is safe for use around pets and home when used as directed. Use with any litter substrate, including clay, corn, corn cob, paper and more.For use on airborne odors, liberally spray into the air. For fabric odors, spray lightly and evenly onto fabric surfaces until slightly damp (not recommended for use on silk or leather). For use on hard surfaces, lightly spray until slightly damp and wipe up excess with cloth. LITTER BOX ODOR ELIMINATOR: Breakthrough formula permanently and instantly eliminates cat odors. ADVANCED, TRIPLE - ACTION FORMULA: Eliminates airborne, fabric and hard - surface odors. FRAGRANCE FREE: Spray in the air or on surfaces - leaves no scent behind. SAFE FOR PETS AND HOME: Safe for use around pets and home when used as directed and will not cause litter to clump. TRUSTED BRAND: From the maker of Nature 's Miracle products, the pet stain and odor removing brand you trust because it works",
       "weight": 24,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "cat",
         "product_type": "accessories",
@@ -765,13 +765,13 @@
       "original_price": 16.90,
       "description": "",
       "weight": 15,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "cat",
         "product_type": "pet furniture",
@@ -786,13 +786,13 @@
       "original_price": 21.99,
       "description": "Pure Fun Bird Food for Parrots and Conures is a premium blend of fruit, FruitBlend Flavor Smart Pellets, vegetable and nuts to help excite and enrich your pet bird. This blend includes a delicious mix of right-sized pieces for your bird which helps minimize wasted food. Available in 2 lb bags for African greys, conures, Amazons, cockatoos and other parrots and conures that prefer this food size. With fruit, vegetables and nuts to add enriching variety. Right - sized pieces to minimize waste. Includes ZuPreem Smart Pellets for optimum nutrition ",
       "weight": 2,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "bird",
         "product_type": "food",
@@ -807,13 +807,13 @@
       "original_price": 224.99,
       "description": "Small parrot playstand holds multiple toys and treats.Included ladders, swing, hooks and feed cups keep your bird occupied.Extra storage shelf can be used to hold toys, treats and more. 3 ladders. Great place for your bird to sit. Great for indoor or outdoor. Includes 8 hooks for hanging toys ",
       "weight": 0,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "bird",
         "product_type": "toys and accessories",
@@ -828,13 +828,13 @@
       "original_price": 6.99,
       "description": "Suitable for all marine species, even finicky angelfish and butterflies. It contains no fillers and is hormone free. Fortified with garlic, vitamin C and chlorella algae. Fortified with GarlicGuard, vitamin C & chlorella algae. Entices finicky fish eaters to eat and thrive ",
       "weight": 1,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "fish",
         "product_type": "food",
@@ -849,13 +849,13 @@
       "original_price": 28.99,
       "description": "GloFish Blue LED Aquarium Light is designed to create an environment to optimize The fluorescent fish - and breathe new life into your tank. This innovative and sleek light bar features blue LED lights that highlight the fluorescent colors of the fish. It's an ideal way to quickly convert any aquarium into a stunning home.This blue LED aquarium light can be easily added to any aquarium to create the ultimate fish environment. This waterproof LED light can be used with any glass canopy or light hood and feature simple clips that fit into the front of your aquarium frame. Each light set includes a blue LED light, frame clip, two cord routing clips, on/off switch and a low-voltage transformer. The fluorescent fish are born brilliant. They get their natural, vibrant color from their parents and are not injected, painted or dyed. Our products create a complete underwater fluorescent experience that appeals to all ages and levels of expertise. Aquarium light: Easily convert an aquarium into a stunning home for your fluorescent fish. Blue LED lights: Suspend LED aquarium light bar over your aquarium cover to enhance your tank. Stays in place: Includes rubber feet to prevent light bar from slipping. Usage: Fits aquariums up to 30 inches long - use with a glass or clear plastic canopy. Great experience: Fluorescent fish and products create a complete underwater fluorescent experience ",
       "weight": 0,
-      "product_reviews": {
+      "product_reviews": [{
         "author_name": "",
         "author_email": "",
         "rating": "",
         "review_title": "",
         "review_body": ""
-      },
+      }],
       "product_data": {
         "animal_type": "fish",
         "product_type": "accessories",

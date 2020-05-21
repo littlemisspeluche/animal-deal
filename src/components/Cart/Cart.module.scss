@@ -1,12 +1,25 @@
-.container {}
+.container {
+  margin: 1rem
+}
 
 .cart {}
 
 .collection {}
 
-.item-card {}
+.item-card {
+  min-height: 8.4rem;
+  position: relative;
+  display: flex;
+  padding-left: 0;
+  margin: 2rem;
+}
 
 .item-img {}
+
+.item-img img {
+  width: 150px;
+  margin-right: 25px;
+}
 
 .item-desc {}
 

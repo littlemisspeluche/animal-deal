@@ -4,12 +4,107 @@
   justify-content: center;
 }
 
-// .filterBtn {
-//   border: none;
-// }
+.header {
+  display: flex;
+  justify-content: space-between;
+}
 
-// .active-category {
-//   font-weight: 800;
-//   border-bottom: 0.0.95rem solid black;
-//   text-transform: capitalize;
+
+.container {
+  margin: 1rem;
+}
+
+
+.Group25 {
+  position: relative;
+
+  &:hover {
+    .Ellipse13 {
+      left: 15px
+    }
+
+    .Ellipse12 {
+      left: 3px
+    }
+
+    .Ellipse11 {
+      left: 11px
+    }
+  }
+}
+
+.Rectangle24 {
+  width: 1.35rem;
+  height: 0.1rem;
+  background: #C4C4C4;
+  border-radius: 3px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+
+}
+
+.Rectangle25 {
+  width: 1.35rem;
+  height: 0.1rem;
+  background: #C4C4C4;
+  border-radius: 3px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  position: absolute;
+  top: 0.35rem;
+}
+
+.Rectangle26 {
+  width: 1.35rem;
+  height: 0.1rem;
+  background: #C4C4C4;
+  border-radius: 3px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  position: absolute;
+  top: 0.75rem;
+}
+
+.Ellipse11 {
+  position: absolute;
+  width: 0.255rem;
+  height: 0.255rem;
+  left: 3px;
+  border-radius: 50%;
+  background: #C4C4C4;
+  bottom: -0.5px;
+  transition: 0.3s;
+}
+
+.Ellipse12 {
+  position: absolute;
+  width: 0.255rem;
+  height: 0.255rem;
+  left: 15px;
+  border-radius: 50%;
+  background: #C4C4C4;
+  bottom: -6.5px;
+  transition: 0.3s;
+}
+
+.Ellipse13 {
+  position: absolute;
+  width: 0.255rem;
+  height: 0.255rem;
+  left: 6.5px;
+  border-radius: 50%;
+  background: #C4C4C4;
+  bottom: -12.5px;
+  transition: 0.3s;
+}
+
+// .Group25:hover {
+//   .Ellipse13 {
+//     left: 15px
+//   }
+
+//   .Ellipse12 {
+//     left: 3px
+//   }
+
+//   .Ellipse11 {
+//     left: 6.5px
+//   }
 // }

@@ -3,7 +3,7 @@ import style from "./Home.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import BannerCarousel from "../Carousels/BannerCarousel";
 import CardsCarousel from "../Carousels/CardsCarousel";
-import Card from "../Cards/Card/Card";
+import Card from "../Card/Card";
 import ShopBanner from "../ShopBanner/ShopBanner";
 import Button from "../Button/Button";
 import Footer from "../Footer/Footer";

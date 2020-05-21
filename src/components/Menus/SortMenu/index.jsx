@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import actions from "../../../actions";
-
+import _ from "lodash";
+import style from "./SortMenu.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function SortMenu() {
 	const { activeOption } = useSelector(state => state.filters);
 
@@ -19,12 +21,47 @@ export default function SortMenu() {
 			filteredProducts.slice().sort((a, b) => b.price - a.price)) ||
 		(products && products.slice().sort((a, b) => b.price - a.price));
 
+	const sortAlphabetically =
+		(filteredProducts &&
+			filteredProducts.slice().sort((a, b) => {
+				if (a.name < b.name) {
+					return -1;
+				}
+				if (a.name > b.name) {
+					return 1;
+				}
+				return 0;
+			})) ||
+		(products &&
+			products.slice().sort((a, b) => {
+				if (a.name < b.name) {
+					return -1;
+				}
+				if (a.name > b.name) {
+					return 1;
+				}
+				return 0;
+			}));
+
+	const sortByPopularity = () => {
+		// products.map(({ product_reviews }) => {
+		// _.filter(product_reviews, function ({ rating }) {
+		// 	console.log(rating);
+		// });
+		// });
+	};
+
 	const handleSortProducts = () => {
 		if (activeOption) {
 			if (activeOption === "priceASC") {
 				dispatch(actions.products.getFilteredProducts(sortByPriceAsc));
 			} else if (activeOption === "priceDESC") {
 				dispatch(actions.products.getFilteredProducts(sortByPriceDesc));
+			} else if (activeOption === "alphabetically") {
+				dispatch(actions.products.getFilteredProducts(sortAlphabetically));
+			} else if (activeOption === "popularity") {
+				sortByPopularity();
+				// dispatch(actions.products.getFilteredProducts(sortByPopularity));
 			}
 		}
 	};
@@ -34,23 +71,42 @@ export default function SortMenu() {
 
 	return (
 		<div>
-			<form>
-				<select
-					onChange={event => {
-						dispatch(
-							actions.filters.getActiveSortingOption(event.target.value)
-						);
-					}}>
-					<option value="" selected disabled>
-						Sort by
-					</option>
-
-					<option value={"priceDESC"}> Price high to low</option>
-					<option value={"priceASC"}>Price low to high</option>
-					<option value={"alphabetically"}>Name</option>
-					<option value={"popularity"}>Popularity</option>
-				</select>
-			</form>
+			<div>
+				<ul className={style["btn-container"]}>
+					<li id={style["sort-btn"]}>
+						sort by
+						<FontAwesomeIcon icon="sort" />
+						<ul>
+							<li
+								onClick={() =>
+									dispatch(actions.filters.getActiveSortingOption("priceDESC"))
+								}>
+								Price high to low
+							</li>
+							<li
+								onClick={() =>
+									dispatch(actions.filters.getActiveSortingOption("priceASC"))
+								}>
+								Price low to high
+							</li>
+							<li
+								onClick={() =>
+									dispatch(
+										actions.filters.getActiveSortingOption("alphabetically")
+									)
+								}>
+								Name
+							</li>
+							<li
+								onClick={() =>
+									dispatch(actions.filters.getActiveSortingOption("popularity"))
+								}>
+								Popularity
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
 		</div>
 	);
 }

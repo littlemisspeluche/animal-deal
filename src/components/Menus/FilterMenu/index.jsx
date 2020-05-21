@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import MenuCategories from "./MenuCategories";
 import actions from "../../../actions";
+import FilterIcon from "../../../assets/icons/FilterIcon";
+import style from "./FilterMenu.module.scss";
 
 export default function FilterMenu() {
 	const categoriesJSON = require("../../../data/Categories.json");
@@ -22,7 +24,11 @@ export default function FilterMenu() {
 
 	return (
 		<div>
-			<button onClick={() => toggleFiltersMenu()}>Filters Menu</button>
+			<button
+				className={style["menu-button"]}
+				onClick={() => toggleFiltersMenu()}>
+				<FilterIcon height={"30px"} width={"30px"} />
+			</button>
 			{isFilterMenuOpen &&
 				categories.map(mainCategory => (
 					<div>

@@ -13,9 +13,9 @@ const addToCart = id => {
 	};
 };
 
-const removeFromCart = id => {
+const removeItem = id => {
 	return {
-		type: actionType.REMOVE_FROM_CART,
+		type: actionType.REMOVE_ITEM,
 		payload: id
 	};
 };
@@ -39,5 +39,9 @@ const emptyCart = () => {
 
 export default {
 	addToCart,
-	getProducts
+	getProducts,
+	removeItem,
+	subtractQuantity,
+	addQuantity,
+	emptyCart
 };
