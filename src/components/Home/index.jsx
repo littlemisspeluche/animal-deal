@@ -26,22 +26,22 @@ export default function Home() {
 			<div className={style["whats-new"]}>
 				<h2>Whats new</h2>
 				<CardsCarousel>
-					<Card title={"Product 1"} price={"22"} />
-					<Card title={"Product 2"} price={"18"} />
-					<Card title={"Product 3"} price={"23"} />
-					<Card title={"Product 4"} price={"22"} />
-					<Card title={"Product 5"} price={"18.5"} />
+					<Card title={"Product 1"} price={"22"} id={1} />
+					<Card title={"Product 2"} price={"18"} id={2} />
+					<Card title={"Product 3"} price={"23"} id={3} />
+					<Card title={"Product 4"} price={"22"} id={4} />
+					<Card title={"Product 5"} price={"18.5"} id={5} />
 				</CardsCarousel>
 			</div>
 
 			<div className={style["favorites"]}>
 				<h2>Favorites</h2>
 				<CardsCarousel>
-					<Card title={"Product 1"} price={"22"} />
-					<Card title={"Product 2"} price={"18"} />
-					<Card title={"Product 3"} price={"23"} />
-					<Card title={"Product 4"} price={"22"} />
-					<Card title={"Product 5"} price={"18.5"} />
+					<Card title={"Product 1"} price={"22"} id={6} />
+					<Card title={"Product 2"} price={"18"} id={7} />
+					<Card title={"Product 3"} price={"23"} id={8} />
+					<Card title={"Product 4"} price={"22"} id={9} />
+					<Card title={"Product 5"} price={"18.5"} id={10} />
 				</CardsCarousel>
 			</div>
 

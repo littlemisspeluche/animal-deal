@@ -32,7 +32,7 @@ export default function CardsCarousel({ children }) {
 
 	return (
 		<Carousel
-			arrows
+			arrows={false}
 			centerMode
 			className=""
 			containerClass="container"
@@ -43,7 +43,7 @@ export default function CardsCarousel({ children }) {
 			slidesToSlide={1}
 			swipeable
 			keyBoardControl={false}>
-			<div>{children}</div>
+			{children}
 		</Carousel>
 	);
 }
