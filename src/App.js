@@ -4,16 +4,16 @@ import Home from "./components/Home";
 import Products from "./components/Products";
 import "./App.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faBars,
 	faFilter,
 	faAngleUp,
-	faAngleDown
+	faAngleDown,
+	faSort
 } from "@fortawesome/free-solid-svg-icons";
 import Cart from "./components/Cart";
 
-library.add(faBars, faFilter, faAngleUp, faAngleDown);
+library.add(faBars, faFilter, faAngleUp, faAngleDown, faSort);
 
 function App() {
 	return (

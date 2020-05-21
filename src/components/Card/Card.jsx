@@ -1,14 +1,12 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import actions from "../../../actions";
+import actions from "../../actions";
 
 import style from "./Card.module.scss";
 
 export default function Card({ id, title, price }) {
 	const dispatch = useDispatch();
-	const { items, addedItems, total } = useSelector(state => state.cart);
 	const handleAddToCart = id => {
-		// console.log(id);
 		dispatch(actions.cart.addToCart(id));
 	};
 

@@ -4,7 +4,7 @@ import actions from "../../actions";
 import style from "./Products.module.scss";
 import FilterMenu from "../Menus/FilterMenu";
 import SortMenu from "../Menus/SortMenu";
-import Card from "../Cards/Card/Card";
+import Card from "../Card/Card";
 import { Link } from "react-router-dom";
 
 export default function Products() {
@@ -77,9 +77,11 @@ export default function Products() {
 	}, [activeProductCategory]);
 
 	return (
-		<div>
-			<FilterMenu />
-			<SortMenu />
+		<div className={style.container}>
+			<div className={style.header}>
+				<FilterMenu />
+				<SortMenu />
+			</div>
 
 			<div className={style["products-container"]}>
 				<Link to="/cart">CART</Link>
