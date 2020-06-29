@@ -10,6 +10,7 @@ export default function FilterMenu() {
 	const { menu } = categoriesJSON;
 
 	const { categories, isMenuOpen } = useSelector(state => state.filters);
+	const { mainCategory } = useSelector(state => state.products);
 
 	const { activeAnimalType } = useSelector(state => state.products);
 	const dispatch = useDispatch();
@@ -27,22 +28,31 @@ export default function FilterMenu() {
 				<FilterIcon height={"30px"} width={"30px"} />
 			</button>
 			<div className={style["menu-categories"]}>
+				{isMenuOpen && <h5 className={style.animalType}>Animal Type</h5>}
 				{isMenuOpen &&
 					categories.map(mainCategory => (
-						<div>
+						<div key={mainCategory.title}>
 							<h5
-								onClick={() =>
-									dispatch(
-										actions.products.setActiveAnimalType(mainCategory.title)
-									)
-								}>
+								className={
+									activeAnimalType === mainCategory.title
+										? style["selected-pet"]
+										: style["non-selected-pet"]
+								}
+								onClick={() => {
+									dispatch(actions.products.setMainCategories(mainCategory));
+									activeAnimalType === mainCategory.title
+										? dispatch(actions.products.setActiveAnimalType(null))
+										: dispatch(
+												actions.products.setActiveAnimalType(mainCategory.title)
+										  );
+								}}>
 								{mainCategory.title}
 							</h5>
-							{activeAnimalType === mainCategory.title && (
-								<MenuCategories categoryData={mainCategory} />
-							)}
 						</div>
 					))}
+				{isMenuOpen && mainCategory && (
+					<MenuCategories categoryData={mainCategory} />
+				)}
 			</div>
 		</div>
 	);

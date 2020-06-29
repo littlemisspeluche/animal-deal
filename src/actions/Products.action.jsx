@@ -32,11 +32,17 @@ const getFilteredProducts = products => ({
 	payload: products
 });
 
+const setMainCategories = mainCategory => ({
+	type: "MAIN_CATEGORIES",
+	payload: mainCategory
+});
+
 export default {
 	getProducts,
 	setActiveAnimalType,
 	setActiveProductType,
 	setActiveProductCategory,
 	getSortedProducts,
-	getFilteredProducts
+	getFilteredProducts,
+	setMainCategories
 };

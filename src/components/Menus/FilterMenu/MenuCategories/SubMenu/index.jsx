@@ -3,22 +3,26 @@ import { useSelector, useDispatch } from "react-redux";
 import actions from "../../../../../actions";
 
 export default function SubMenu({ categoryData }) {
-	const { activeProductType } = useSelector(state => state.products);
 	const dispatch = useDispatch();
-	if (activeProductType === categoryData.title && categoryData.submenu) {
-		return (
-			<div>
-				{categoryData.submenu.map(category => (
-					<div
-						onClick={() =>
-							dispatch(
-								actions.products.setActiveProductCategory(category.title)
-							)
-						}>
-						{category.title}
-					</div>
-				))}
-			</div>
-		);
-	}
+
+	return (
+		<div>
+			{categoryData.submenu && (
+				<div>
+					{categoryData.submenu.map(category => (
+						<h5
+							style={{ fontWeight: "400", margin: "0.5rem 0" }}
+							key={category.title}
+							onClick={() =>
+								dispatch(
+									actions.products.setActiveProductCategory(category.title)
+								)
+							}>
+							{category.title}
+						</h5>
+					))}
+				</div>
+			)}
+		</div>
+	);
 }
