@@ -1,7 +1,7 @@
 {
   "data": [{
       "id": 1111,
-      "name": "Orijen Original Dry Dog Food",
+      "name": "Orijen Original",
       "image": ["https://i.ibb.co/MGCqfD5/Orijen-Original-Dry-Dog-Food-25-lbs.jpg", "https://i.ibb.co/tMk3GqR/Orijen-Original-Dry-Dog-Food-25-lbs-back.jpg"],
       "price": 86.44,
       "original_price": 90.99,
@@ -22,7 +22,7 @@
     },
     {
       "id": 1112,
-      "name": "CANIDAE All Life Stages Multi - Protein Formula Dry Dog Food",
+      "name": "CANIDAE All Life Stages Multi - Protein Formula",
       "image": ["https://i.ibb.co/mDrfxVC/CANIDAE-All-Life-Stages-Multi-Protein-Formula-Dry-Dog-Food.jpg", "https://i.ibb.co/kmf4nXy/CANIDAE-All-Life-Stages-Multi-Protein-Formula-Dry-Dog-Food-back.jpg"],
       "price": 42.97,
       "original_price": 54.99,
@@ -43,7 +43,7 @@
     },
     {
       "id": 1113,
-      "name": "Taste of the Wild High Prairie Grain-Free Dry Dog Food",
+      "name": "Taste of the Wild High Prairie Grain-Free",
       "image": ["https://i.ibb.co/RjDzZbh/Taste-of-the-Wild-High-Prairie-Grain-Free-Dry-Dog-Food.jpg", "https://i.ibb.co/CP39fFZ/Taste-of-the-Wild-High-Prairie-Grain-Free-Dry-Dog-Food-back.jpg"],
       "price": 46.54,
       "original_price": 48.99,
@@ -86,7 +86,7 @@
     },
     {
       "id": 1121,
-      "name": "Blue Buffalo Homestyle Recipe Chicken Dinner with Garden Vegetables & Brown Rice Canned Dog Food, case of 12",
+      "name": "Blue Buffalo Homestyle Recipe Chicken Dinner with Garden Vegetables & Brown Rice",
       "image": ["https://i.ibb.co/HVsy5L5/Blue-Buffalo-Homestyle-Recipe-Chicken-Dinner-with-Garden-Vegetables-amp-Brown-Rice-Canned-Dog-Food.jpg", "https://i.ibb.co/vjGX24f/Blue-Buffalo-Homestyle-Recipe-Chicken-Dinner-with-Garden-Vegetables-amp-Brown-Rice-Canned-Dog-Food-back.jpg"],
       "price": 17.10,
       "original_price": 18.00,
@@ -171,7 +171,7 @@
     },
     {
       "id": 1116,
-      "name": "Blue Buffalo Blue Life Protection Formula Small Breed Puppy Chicken & Oatmeal Recipe Dry Dog Food",
+      "name": "Blue Buffalo Blue Life Protection Formula Small Breed Puppy Chicken & Oatmeal Recipe",
       "image": ["https://i.ibb.co/4dqP4sh/Blue-Buffalo-Blue-Life-Protection-Formula-Small-Breed-Puppy-Chicken-amp-Oatmeal-Recipe-Dry-Dog-Food.jpg", "https://i.ibb.co/4fsjzgs/Blue-Buffalo-Blue-Life-Protection-Formula-Small-Breed-Puppy-Chicken-amp-Oatmeal-Recipe-Dry-Dog-Food-back.jpg"],
       "price": 25.06,
       "original_price": 37.99,
@@ -192,7 +192,7 @@
     },
     {
       "id": 1117,
-      "name": "Blue Buffalo Blue Basics Puppy Turkey & Potato Recipe Dry Dog Food",
+      "name": "Blue Buffalo Blue Basics Puppy Turkey & Potato Recipe",
       "image": ["https://i.ibb.co/Jyxzs8Y/Blue-Buffalo-Blue-Basics-Puppy-Turkey-amp-Potato-Recipe-Dry-Dog-Food.jpg", "https://i.ibb.co/mJqMgyn/Blue-Buffalo-Blue-Basics-Puppy-Turkey-amp-Potato-Recipe-Dry-Dog-Food-back.jpg"],
       "price": 52.24,
       "original_price": 54.98,
@@ -213,7 +213,7 @@
     },
     {
       "id": 1118,
-      "name": "Blue Buffalo Life Protection Formula Natural Adult Fish and Brown Rice Dry Dog Food",
+      "name": "Blue Buffalo Life Protection Formula Natural Adult Fish and Brown Rice",
       "image": ["https://i.ibb.co/JRsT8hv/Blue-Buffalo-Life-Protection-Formula-Natural-Adult-Fish-and-Brown-Rice-Dry-Dog-Food.jpg", "https://i.ibb.co/KmhXMRw/Blue-Buffalo-Life-Protection-Formula-Natural-Adult-Fish-and-Brown-Rice-Dry-Dog-Food-back.jpg"],
       "price": 37.88,
       "original_price": 39.87,
@@ -234,7 +234,7 @@
     },
     {
       "id": 1119,
-      "name": "Blue Buffalo Baby Blue Healthy Growth Formula Natural Chicken and Brown Rice Recipe Kitten Dry Food",
+      "name": "Blue Buffalo Baby Blue Healthy Growth Formula Natural Chicken and Brown Rice Recipe",
       "image": ["https://i.ibb.co/xSQwSKf/Blue-Buffalo-Baby-Blue-Healthy-Growth-Formula-Natural-Chicken-and-Brown-Rice-Recipe-Kitten-Dry-Food.jpg", "https://i.ibb.co/Vp8rbkH/Blue-Buffalo-Baby-Blue-Healthy-Growth-Formula-Natural-Chicken-and-Brown-Rice-Recipe-Kitten-Dry-Food-back.jpg"],
       "price": 16.24,
       "original_price": 17.09,
@@ -255,7 +255,7 @@
     },
     {
       "id": 2111,
-      "name": "Royal Canin Feline Health Nutrition Thin Slices in Gravy Variety Pack Wet Kitten Food, Count of 12",
+      "name": "Royal Canin Feline Health Nutrition Thin Slices in Gravy Variety Pack",
       "image": ["", ""],
       "price": 15.81,
       "original_price": 16.64,
@@ -297,7 +297,7 @@
     },
     {
       "id": 1131,
-      "name": "Blue Buffalo Blue Health Bars With Bacon, Egg & Cheese Dog Treats",
+      "name": "Blue Buffalo Blue Health Bars With Bacon, Egg & Cheese",
       "image": ["https://i.ibb.co/bHTHpN8/Blue-Buffalo-Blue-Health-Bars-With-Bacon-Egg-amp-Cheese-Dog-Treats.jpg", "https://i.ibb.co/2sfn1Wj/Blue-Buffalo-Blue-Health-Bars-With-Bacon-Egg-amp-Cheese-Dog-Treats-back.jpg"],
       "price": 4.25,
       "original_price": 4.47,
@@ -318,7 +318,7 @@
     },
     {
       "id": 1211,
-      "name": "John Paul Pet Oatmeal Dog Shampoo",
+      "name": "John Paul Pet Oatmeal",
       "image": ["https://i.ibb.co/b69PB1k/John-Paul-Pet-Oatmeal-Dog-Shampoo.png", "https://i.ibb.co/SfSfLmK/John-Paul-Pet-Oatmeal-Dog-Shampoo-back.png"],
       "price": 8.79,
       "original_price": 15.99,
@@ -339,7 +339,7 @@
     },
     {
       "id": 1221,
-      "name": "Magic Coat 3-in-1 Knot Away Grooming Tool for Dogs",
+      "name": "Magic Coat 3-in-1 Knot Away Grooming Tool",
       "image": ["https://i.ibb.co/6sy4svT/Magic-Coat-3-in-1-Knot-Away-Grooming-Tool-for-Dogs.jpg", "https://i.ibb.co/XD4n5kn/Magic-Coat-3-in-1-Knot-Away-Grooming-Tool-for-Dogs-back.jpg"],
       "price": 12.99,
       "original_price": 19.99,
@@ -381,7 +381,7 @@
     },
     {
       "id": 131,
-      "name": "Simple Solution Extra Large Dog Training Pads, Count of 50",
+      "name": "Simple Solution Extra Large",
       "image": ["https://i.ibb.co/Z11J6Js/Simple-Solution-Extra-Large-Dog-Training-Pads-Count-of-50.jpg", "https://i.ibb.co/d7jZr1g/Simple-Solution-Extra-Large-Dog-Training-Pads-Count-of-50-back.jpg"],
       "price": 23.27,
       "original_price": 24.49,
@@ -402,7 +402,7 @@
     },
     {
       "id": 141,
-      "name": "Spot Naturals Jute Critters Moose Dog Chew Toy, X-Large",
+      "name": "Spot Naturals Jute Critters Moose Dog Chew Toy",
       "image": ["https://i.ibb.co/xXkk185/Spot-Naturals-Jute-Critters-Moose-Dog-Chew-Toy-X-Large.jpg", "https://i.ibb.co/hKVtFzT/Spot-Naturals-Jute-Critters-Moose-Dog-Chew-Toy-X-Large-back.jpg"],
       "price": 7.50,
       "original_price": 14.99,
@@ -423,7 +423,7 @@
     },
     {
       "id": 151,
-      "name": "Good2Go Reversible Dog Raincoat in Yellow, Extra Small",
+      "name": "Good2Go Reversible Dog Raincoat in Yellow",
       "image": ["https://i.ibb.co/pd53vD5/Good2-Go-Reversible-Dog-Raincoat-in-Yellow-Extra-Small.png", "https://i.ibb.co/pbqRKfp/Good2-Go-Reversible-Dog-Raincoat-in-Yellow-Extra-Small-back.png"],
       "price": 7.50,
       "original_price": 14.99,
@@ -444,7 +444,7 @@
     },
     {
       "id": 1611,
-      "name": "Harmony Silicone Double Diner Dog Bowl Set, 2.1 Cups",
+      "name": "Harmony Silicone Double Diner Dog Bowl Set",
       "image": ["https://i.ibb.co/4tygcZM/Harmony-Silicone-Double-Diner-Dog-Bowl-Set-2-1-Cups.jpg", "https://i.ibb.co/QbZ52k8/Harmony-Silicone-Double-Diner-Dog-Bowl-Set-2-1-Cups-back.jpg"],
       "price": 19.99,
       "original_price": 21.99,
@@ -465,7 +465,7 @@
     },
     {
       "id": 1621,
-      "name": "Good2Go Expandable Pet Carrier, Small",
+      "name": "Good2Go Expandable Pet Carrier",
       "image": ["https: //i.ibb.co/wRWB8Sk/Good2-Go-Expandable-Pet-Carrier-Small.jpg", "https://i.ibb.co/2W3bZ9V/Good2-Go-Expandable-Pet-Carrier-Small-back.jpg"],
       "price": 69.99,
       "original_price": 74.99,
@@ -486,7 +486,7 @@
     },
     {
       "id": 1631,
-      "name": "Bags on Board Doggie Clean-Up Bags, 140 count",
+      "name": "Bags on Board Doggie Clean-Up Bags",
       "image": ["https://i.ibb.co/Sd4F7ZM/Bags-on-Board-Doggie-Clean-Up-Bags-140-count.jpg", ""],
       "price": 11.54,
       "original_price": 12.15,
@@ -507,7 +507,7 @@
     },
     {
       "id": 171,
-      "name": "Harmony Blue Cuddler Orthopedic Dog Bed, 28\" L X 20\" W",
+      "name": "Harmony Blue Cuddler Orthopedic Dog Bed",
       "image": ["", ""],
       "price": 69.99,
       "original_price": 90.99,
@@ -528,7 +528,7 @@
     },
     {
       "id": 2211,
-      "name": "Purina Pro Plan LIVECLEAR Rinse Free Allergen Reducing Shampoo for Cats",
+      "name": "Purina Pro Plan LIVECLEAR Rinse Free Allergen Reducing Shampoo",
       "image": ["https://i.ibb.co/yS84CS5/Purina-Pro-Plan-LIVECLEAR-Rinse-Free-Allergen-Reducing-Shampoo-for-Cats.jpg", ""],
       "price": 11.39,
       "original_price": 13.00,
@@ -633,7 +633,7 @@
     },
     {
       "id": 2331,
-      "name": "Purina Tidy Cats Breeze Spring Clean Cat Pads Refill Pack, Count of 10",
+      "name": "Purina Tidy Cats Breeze Spring Clean Cat Pads Refill Pack",
       "image": ["https://i.ibb.co/gtxKYcS/Purina-Tidy-Cats-Breeze-Spring-Clean-Cat-Pads-Refill-Pack-Count-of-10.jpg", "https://i.ibb.co/gj8sxkW/Purina-Tidy-Cats-Breeze-Spring-Clean-Cat-Pads-Refill-Pack-Count-of-10-back.jpg"],
       "price": 13.29,
       "original_price": 16.99,
@@ -675,7 +675,7 @@
     },
     {
       "id": 251,
-      "name": "Pusheen Pattern Pink Cat Bandana, Medium/Large",
+      "name": "Pusheen Pattern Pink Cat Bandana",
       "image": ["https://i.ibb.co/GMgFYqc/Pusheen-Pattern-Pink-Cat-Bandana-Medium-Large.jpg", "https://i.ibb.co/7YFFMZV/Pusheen-Pattern-Pink-Cat-Bandana-Medium-Large-back.jpg"],
       "price": 4.00,
       "original_price": 7.99,
@@ -696,7 +696,7 @@
     },
     {
       "id": 2611,
-      "name": "Harmony Stainless Steel Cat Diner, 1 Cup",
+      "name": "Harmony Stainless Steel Cat Diner",
       "image": ["https://i.ibb.co/WHrkfxr/Harmony-Stainless-Steel-Cat-Diner-1-Cup.jpg", ""],
       "price": 9.99,
       "original_price": 10.99,
@@ -717,7 +717,7 @@
     },
     {
       "id": 2621,
-      "name": "SportPet Designs Kitty City Tan Pet Travel Carrier, Small",
+      "name": "SportPet Designs Kitty City Tan Pet Travel Carrier",
       "image": ["https://i.ibb.co/TtRm4mn/Sport-Pet-Designs-Kitty-City-Tan-Pet-Travel-Carrier-Small.jpg", "https://i.ibb.co/VVjr8XN/Sport-Pet-Designs-Kitty-City-Tan-Pet-Travel-Carrier-Small-back.jpg"],
       "price": 30.99,
       "original_price": 39.99,
@@ -759,7 +759,7 @@
     },
     {
       "id": 271,
-      "name": "Harmony Hooded Cave Cat Bed in Grey, 17\" L x 15\" W",
+      "name": "Harmony Hooded Cave Cat Bed in Grey",
       "image": ["https://i.ibb.co/Px3NXRM/Harmony-Hooded-Cave-Cat-Bed-in-Grey-17-L-x-15-W.png", ""],
       "price": 13,
       "original_price": 16.90,
@@ -801,7 +801,7 @@
     },
     {
       "id": 321,
-      "name": "Prevue Pet Products Small Parrot Playstand, 17.6\"L X 16.5\" W X 59\"H ",
+      "name": "Prevue Pet Products Small Parrot Playstand",
       "image": ["https://i.ibb.co/YcQNZ5w/Prevue-Pet-Products-Small-Parrot-Playstand-17-6-L-X-16-5-W-X-59-H.jpg", ""],
       "price": 119.26,
       "original_price": 224.99,
@@ -843,7 +843,7 @@
     },
     {
       "id": 421,
-      "name": "GloFish Blue LED Aquarium Waterproof Light, 8\"L ",
+      "name": "GloFish Blue LED Aquarium Waterproof Light",
       "image": ["https://i.ibb.co/3vngY6C/Glo-Fish-Blue-LED-Aquarium-Waterproof-Light-8-L.jpg", "https://i.ibb.co/Jvx9d1K/Glo-Fish-Blue-LED-Aquarium-Waterproof-Light-8-L-back.png"],
       "price": 24.64,
       "original_price": 28.99,

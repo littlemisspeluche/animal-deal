@@ -19,10 +19,13 @@ export default function Products() {
 		products,
 		sortedProductsList,
 		activeAnimalType,
-		activeProductType,
-		activeProductCategory,
+		activeProductType, // food
+		activeProductCategory, //dry food
 		filteredProducts
 	} = useSelector(state => state.products);
+	// console.log("Products -> activeProductType", activeProductType);
+	// console.log("Products -> activeProductCategory", activeProductCategory);
+
 	const { isMenuOpen } = useSelector(state => state.filters);
 	useEffect(() => {
 		dispatch(actions.products.getProducts(data));
@@ -36,6 +39,9 @@ export default function Products() {
 			});
 			dispatch(actions.products.getFilteredProducts(filtered));
 			return filtered;
+		} else if (activeAnimalType === null) {
+			dispatch(actions.products.getFilteredProducts(products));
+			return products;
 		}
 	};
 
@@ -62,17 +68,29 @@ export default function Products() {
 
 	const getProductsByActiveProductCategory = () => {
 		if (activeAnimalType && activeProductType && activeProductCategory) {
-			const filtered = filteredProducts.filter(obj => {
+			const filtered = products.filter(obj => {
 				return (
 					obj.product_data.product_type === activeProductType &&
 					obj.product_data.animal_type === activeAnimalType &&
 					obj.product_data.product_category === activeProductCategory
 				);
 			});
+
 			dispatch(actions.products.getFilteredProducts(filtered));
 			return filtered;
 		}
 	};
+
+	// else if (activeAnimalType && activeProductCategory) {
+	// 	const filtered = filteredProducts.filter(obj => {
+	// 		return (
+	// 			obj.product_data.animal_type === activeAnimalType &&
+	// 			obj.product_data.product_category === activeProductCategory
+	// 		);
+	// 	});
+	// 	dispatch(actions.products.getFilteredProducts(filtered));
+	// 	return filtered;
+	// }
 
 	useEffect(() => {
 		getProductsByActiveProductCategory();
@@ -87,12 +105,12 @@ export default function Products() {
 					<FilterMenu />
 					<SortMenu />
 				</div>
-				{/* <Link to="/cart">CART</Link> */}
+				<Link to="/cart">CART</Link>
 
 				<div className={style["products-container"]}>
 					{filteredProducts
 						? filteredProducts.map(product => (
-								<div style={{ width: "45%" }}>
+								<div style={{ width: "45%" }} key={product.id}>
 									<Card
 										id={product.id}
 										title={product.name}
@@ -102,7 +120,7 @@ export default function Products() {
 						  ))
 						: products &&
 						  products.map(product => (
-								<div style={{ width: "45%" }}>
+								<div style={{ width: "45%" }} key={product.id}>
 									<Card
 										id={product.id}
 										title={product.name}

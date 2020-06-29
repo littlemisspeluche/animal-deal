@@ -6,7 +6,8 @@ const INITIAL_STATE = {
 	activeProductType: null,
 	activeProductCategory: null,
 	sortedProductsList: null,
-	filteredProducts: null
+	filteredProducts: null,
+	mainCategory: null
 };
 
 export default (state = INITIAL_STATE, action) => {
@@ -41,6 +42,11 @@ export default (state = INITIAL_STATE, action) => {
 			return {
 				...state,
 				filteredProducts: action.payload
+			};
+		case "MAIN_CATEGORIES":
+			return {
+				...state,
+				mainCategory: action.payload
 			};
 
 		default:
