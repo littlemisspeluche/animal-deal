@@ -81,17 +81,6 @@ export default function Products() {
 		}
 	};
 
-	// else if (activeAnimalType && activeProductCategory) {
-	// 	const filtered = filteredProducts.filter(obj => {
-	// 		return (
-	// 			obj.product_data.animal_type === activeAnimalType &&
-	// 			obj.product_data.product_category === activeProductCategory
-	// 		);
-	// 	});
-	// 	dispatch(actions.products.getFilteredProducts(filtered));
-	// 	return filtered;
-	// }
-
 	useEffect(() => {
 		getProductsByActiveProductCategory();
 	}, [activeProductCategory]);
@@ -110,23 +99,21 @@ export default function Products() {
 				<div className={style["products-container"]}>
 					{filteredProducts
 						? filteredProducts.map(product => (
-								<div style={{ width: "45%" }} key={product.id}>
-									<Card
-										id={product.id}
-										title={product.name}
-										price={product.price}
-									/>
-								</div>
+								<Card
+									key={product.id}
+									id={product.id}
+									title={product.name}
+									price={product.price}
+								/>
 						  ))
 						: products &&
 						  products.map(product => (
-								<div style={{ width: "45%" }} key={product.id}>
-									<Card
-										id={product.id}
-										title={product.name}
-										price={product.price}
-									/>
-								</div>
+								<Card
+									key={product.id}
+									id={product.id}
+									title={product.name}
+									price={product.price}
+								/>
 						  ))}
 				</div>
 			</div>
