@@ -23,8 +23,8 @@ export default function Products() {
 		activeProductCategory, //dry food
 		filteredProducts
 	} = useSelector(state => state.products);
-	console.log("Products -> activeProductType", activeProductType);
-	console.log("Products -> activeProductCategory", activeProductCategory);
+	// console.log("Products -> activeProductType", activeProductType);
+	// console.log("Products -> activeProductCategory", activeProductCategory);
 
 	const { isMenuOpen } = useSelector(state => state.filters);
 	useEffect(() => {
@@ -39,6 +39,9 @@ export default function Products() {
 			});
 			dispatch(actions.products.getFilteredProducts(filtered));
 			return filtered;
+		} else if (activeAnimalType === null) {
+			dispatch(actions.products.getFilteredProducts(products));
+			return products;
 		}
 	};
 
@@ -65,28 +68,29 @@ export default function Products() {
 
 	const getProductsByActiveProductCategory = () => {
 		if (activeAnimalType && activeProductType && activeProductCategory) {
-			// if (activeAnimalType && activeProductCategory) {
-			const filtered = filteredProducts.filter(obj => {
+			const filtered = products.filter(obj => {
 				return (
 					obj.product_data.product_type === activeProductType &&
 					obj.product_data.animal_type === activeAnimalType &&
 					obj.product_data.product_category === activeProductCategory
 				);
 			});
+
 			dispatch(actions.products.getFilteredProducts(filtered));
 			return filtered;
 		}
-		// else if (activeAnimalType && activeProductCategory) {
-		// 	const filtered = filteredProducts.filter(obj => {
-		// 		return (
-		// 			obj.product_data.animal_type === activeAnimalType &&
-		// 			obj.product_data.product_category === activeProductCategory
-		// 		);
-		// 	});
-		// 	dispatch(actions.products.getFilteredProducts(filtered));
-		// 	return filtered;
-		// }
 	};
+
+	// else if (activeAnimalType && activeProductCategory) {
+	// 	const filtered = filteredProducts.filter(obj => {
+	// 		return (
+	// 			obj.product_data.animal_type === activeAnimalType &&
+	// 			obj.product_data.product_category === activeProductCategory
+	// 		);
+	// 	});
+	// 	dispatch(actions.products.getFilteredProducts(filtered));
+	// 	return filtered;
+	// }
 
 	useEffect(() => {
 		getProductsByActiveProductCategory();

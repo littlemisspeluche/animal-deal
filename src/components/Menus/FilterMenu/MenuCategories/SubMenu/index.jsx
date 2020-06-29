@@ -13,11 +13,14 @@ export default function SubMenu({ categoryData }) {
 						<h5
 							style={{ fontWeight: "400", margin: "0.5rem 0" }}
 							key={category.title}
-							onClick={() =>
+							onClick={() => {
 								dispatch(
 									actions.products.setActiveProductCategory(category.title)
-								)
-							}>
+								);
+								dispatch(
+									actions.products.setActiveProductType(categoryData.title)
+								);
+							}}>
 							{category.title}
 						</h5>
 					))}
