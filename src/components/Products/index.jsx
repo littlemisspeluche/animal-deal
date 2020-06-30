@@ -1,9 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import actions from "../../actions";
 import { Link } from "react-router-dom";
-import { makeStyles } from "@material-ui/core/styles";
+// import { makeStyles } from "@material-ui/core/styles";
+// import Pagination from "@material-ui/lab/Pagination";
+import { List, ListItem, makeStyles, Divider, Box } from "@material-ui/core";
+import Avatar from "@material-ui/core/Avatar";
+import ListItemText from "@material-ui/core/ListItemText";
+import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import Pagination from "@material-ui/lab/Pagination";
+
 import style from "./Products.module.scss";
 import FilterMenu from "../Menus/FilterMenu";
 import SortMenu from "../Menus/SortMenu";
@@ -12,10 +18,22 @@ import Header from "../Header";
 import Footer from "../Footer/Footer";
 
 const useStyles = makeStyles(theme => ({
+	// root: {
+	// 	"& > *": {
+	// 		marginTop: theme.spacing(2)
+	// 	}
+	// },
 	root: {
-		"& > *": {
-			marginTop: theme.spacing(2)
-		}
+		width: "100%",
+		backgroundColor: theme.palette.background.paper
+	},
+	item: {
+		padding: theme.spacing(1.2)
+	},
+	avatar: { marginRight: theme.spacing(5) },
+	paginator: {
+		justifyContent: "center",
+		padding: "10px"
 	}
 }));
 export default function Products() {
@@ -24,7 +42,6 @@ export default function Products() {
 	const dispatch = useDispatch();
 
 	const { data } = productJSON;
-	const classes = useStyles();
 
 	const {
 		products,
@@ -38,6 +55,23 @@ export default function Products() {
 	// console.log("Products -> activeProductCategory", activeProductCategory);
 
 	const { isMenuOpen } = useSelector(state => state.filters);
+
+	const classes = useStyles();
+	const itemsPerPage = 10;
+	const [page, setPage] = React.useState(1);
+
+	const roundPage =
+		(filteredProducts && Math.round(filteredProducts.length / itemsPerPage)) ||
+		(products && Math.round(products.length / itemsPerPage));
+
+	const [noOfPages, setNoOfPages] = useState();
+	useEffect(() => {
+		setNoOfPages(roundPage);
+	}, [filteredProducts || products]);
+
+	const handleChange = (event, value) => {
+		setPage(value);
+	};
 	useEffect(() => {
 		dispatch(actions.products.getProducts(data));
 		dispatch(actions.cart.getProducts(data));
@@ -107,7 +141,7 @@ export default function Products() {
 				</div>
 				<Link to="/cart">CART</Link>
 
-				<div className={style["products-container"]}>
+				{/* <div className={style["products-container"]}>
 					{filteredProducts
 						? filteredProducts.map(product => (
 								<Card
@@ -126,10 +160,70 @@ export default function Products() {
 									price={product.price}
 								/>
 						  ))}
-				</div>
-				<div className={classes.root}>
+				</div> */}
+
+				<List dense compoent="span">
+					{filteredProducts
+						? filteredProducts
+								.slice((page - 1) * itemsPerPage, page * itemsPerPage)
+								.map(projectItem => {
+									const labelId = `list-secondary-label-${projectItem.name}`;
+									return (
+										<ListItem
+											key={projectItem.id}
+											button
+											onClick={() => console.log("")}>
+											<ListItemText
+												id={labelId}
+												primary={projectItem.name}
+												secondary={
+													"Agile Metrics: B / Product Quality: A / Code Quality: A / Releases: C / Environment: A"
+												}
+												className={classes.item}
+											/>
+										</ListItem>
+									);
+								})
+						: products &&
+						  products
+								.slice((page - 1) * itemsPerPage, page * itemsPerPage)
+								.map(projectItem => {
+									const labelId = `list-secondary-label-${projectItem.name}`;
+									return (
+										<ListItem
+											key={projectItem.id}
+											button
+											onClick={() => console.log("")}>
+											<ListItemText
+												id={labelId}
+												primary={projectItem.name}
+												secondary={
+													"Agile Metrics: B / Product Quality: A / Code Quality: A / Releases: C / Environment: A"
+												}
+												className={classes.item}
+											/>
+										</ListItem>
+									);
+								})}
+				</List>
+				<Divider />
+				<Box component="span">
+					<Pagination
+						count={noOfPages}
+						page={page}
+						onChange={handleChange}
+						defaultPage={1}
+						color="primary"
+						size="large"
+						showFirstButton
+						showLastButton
+						classes={{ ul: classes.paginator }}
+					/>
+				</Box>
+
+				{/* <div className={classes.root}>
 					<Pagination count={10} variant="outlined" shape="rounded" />
-				</div>
+				</div> */}
 			</div>
 			<Footer />
 		</div>
