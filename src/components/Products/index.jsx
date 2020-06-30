@@ -1,19 +1,30 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import actions from "../../actions";
+import { Link } from "react-router-dom";
+import { makeStyles } from "@material-ui/core/styles";
+import Pagination from "@material-ui/lab/Pagination";
 import style from "./Products.module.scss";
 import FilterMenu from "../Menus/FilterMenu";
 import SortMenu from "../Menus/SortMenu";
 import Card from "../Card/Card";
-import { Link } from "react-router-dom";
 import Header from "../Header";
 import Footer from "../Footer/Footer";
+
+const useStyles = makeStyles(theme => ({
+	root: {
+		"& > *": {
+			marginTop: theme.spacing(2)
+		}
+	}
+}));
 export default function Products() {
 	const productJSON = require("../../data/Products.json");
 
 	const dispatch = useDispatch();
 
 	const { data } = productJSON;
+	const classes = useStyles();
 
 	const {
 		products,
@@ -115,6 +126,9 @@ export default function Products() {
 									price={product.price}
 								/>
 						  ))}
+				</div>
+				<div className={classes.root}>
+					<Pagination count={10} variant="outlined" shape="rounded" />
 				</div>
 			</div>
 			<Footer />
