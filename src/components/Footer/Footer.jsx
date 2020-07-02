@@ -6,16 +6,16 @@ export default function Footer() {
 		<div className={style.footer}>
 			<ul>
 				<li>
-					<a href="#">About</a>
+					<a href="/about">About</a>
 				</li>
 				<li>
-					<a href="#">Search</a>
+					<a href="/search">Search</a>
 				</li>
 				<li>
-					<a href="#">Contact us</a>
+					<a href="/contactUs">Contact us</a>
 				</li>
 				<li>
-					<a href="#">TBD</a>
+					<a href="tbd">TBD</a>
 				</li>
 			</ul>
 		</div>

@@ -1,5 +1,4 @@
 import * as actionTypes from "../actions/Cart.actionType";
-import { useSelector } from "react-redux";
 
 const INITIAL_STATE = {
 	items: null,

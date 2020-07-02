@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import actions from "../../../actions";
-import _ from "lodash";
+// import _ from "lodash";
 import style from "./SortMenu.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function SortMenu() {
@@ -105,7 +105,7 @@ export default function SortMenu() {
 									}>
 									Name
 								</li>
-								<li
+								{/* <li
 									className={style["sort-btn"]}
 									onClick={() =>
 										dispatch(
@@ -113,7 +113,7 @@ export default function SortMenu() {
 										)
 									}>
 									Popularity
-								</li>
+								</li> */}
 							</ul>
 						)}
 					</li>

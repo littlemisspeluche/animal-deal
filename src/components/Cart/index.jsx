@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import actions from "../../actions";
 import style from "./Cart.module.scss";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import QuantityButton from "../Buttons/QuantityButton";
 export default function Cart() {
 	const dispatch = useDispatch();
 
@@ -29,47 +30,59 @@ export default function Cart() {
 				<h5>Your Order:</h5>
 				<ul className={style.collection}>
 					{addedItems &&
-						addedItems.map(item => (
-							<li className={style["item-card"]} key={item.id}>
-								<div className={style["item-img"]}>
-									<img src={item.image} alt={item.name} />
-								</div>
-								<div className={style["item-desc"]}>
-									<span className={style.title}>{item.name}</span>
-									<p>{item.description.split(".")[0]}.</p>
-									<p>
-										<b>Price: {item.price * item.quantity}$</b>
-									</p>
-
-									<div className={style["quantity-container"]}>
-										<Link to="/cart">
-											<FontAwesomeIcon
-												icon="angle-up"
-												onClick={() => {
-													handleAddQuantity(item.id);
-												}}
-											/>
-										</Link>
-										<p>
-											<b>Quantity: {item.quantity}</b>
-										</p>
-										<Link to="/cart">
-											<FontAwesomeIcon
-												icon="angle-down"
-												onClick={() => {
-													handleSubtractQuantity(item.id);
-												}}
-											/>
-										</Link>
+						addedItems.map(item => {
+							{
+								/* console.log("Cart -> item", item); */
+							}
+							return (
+								<li className={style["item-card"]} key={item.id}>
+									<div className={style["item-img"]}>
+										<img src={item.image} alt={item.name} />
 									</div>
-									<button
-										className={style["remove-btn"]}
-										onClick={() => handleRemove(item.id)}>
-										Remove
-									</button>
-								</div>
-							</li>
-						))}
+									<div className={style["item-desc"]}>
+										<span className={style.title}>{item.name}</span>
+										<p>{item.description.split(".")[0]}.</p>
+										<p>
+											<b>Price: {item.price * item.quantity}$</b>
+										</p>
+
+										{/* <QuantityButton item={item} /> */}
+										<div className={style["quantity-container"]}>
+											<Link to="/cart">
+												<FontAwesomeIcon
+													icon="angle-up"
+													onClick={e => {
+														e.preventDefault();
+														// dispatch(actions.cart.addQuantity(item.id));
+														// handleAddQuantity(item.id);
+
+														dispatch(actions.cart.addToCart(item.id));
+													}}
+												/>
+											</Link>
+											<p>
+												<b>Quantity: {item.quantity}</b>
+											</p>
+											<Link to="/cart">
+												<FontAwesomeIcon
+													icon="angle-down"
+													onClick={e => {
+														e.preventDefault();
+														dispatch(actions.cart.subtractQuantity(item.id));
+														// handleSubtractQuantity(item.id);
+													}}
+												/>
+											</Link>
+										</div>
+										<button
+											className={style["remove-btn"]}
+											onClick={() => handleRemove(item.id)}>
+											Remove
+										</button>
+									</div>
+								</li>
+							);
+						})}
 				</ul>
 			</div>
 			<div>
