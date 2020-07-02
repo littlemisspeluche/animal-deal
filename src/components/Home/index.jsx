@@ -1,11 +1,11 @@
 import React from "react";
 import style from "./Home.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import BannerCarousel from "../Carousels/BannerCarousel";
 import CardsCarousel from "../Carousels/CardsCarousel";
 import Card from "../Card/Card";
 import ShopBanner from "../ShopBanner";
-import Button from "../Button/Button";
+import Button from "../Buttons/Button";
 import Footer from "../Footer/Footer";
 import Header from "../Header";
 
@@ -25,24 +25,24 @@ export default function Home() {
 
 			<div className={style["whats-new"]}>
 				<h2>Whats new</h2>
-				<CardsCarousel>
+				{/* <CardsCarousel>
 					<Card title={"Product 1"} price={"22"} id={1} />
 					<Card title={"Product 2"} price={"18"} id={2} />
 					<Card title={"Product 3"} price={"23"} id={3} />
 					<Card title={"Product 4"} price={"22"} id={4} />
 					<Card title={"Product 5"} price={"18.5"} id={5} />
-				</CardsCarousel>
+				</CardsCarousel> */}
 			</div>
 
 			<div className={style["favorites"]}>
 				<h2>Favorites</h2>
-				<CardsCarousel>
+				{/* <CardsCarousel>
 					<Card title={"Product 1"} price={"22"} id={6} />
 					<Card title={"Product 2"} price={"18"} id={7} />
 					<Card title={"Product 3"} price={"23"} id={8} />
 					<Card title={"Product 4"} price={"22"} id={9} />
 					<Card title={"Product 5"} price={"18.5"} id={10} />
-				</CardsCarousel>
+				</CardsCarousel> */}
 			</div>
 
 			<div className={style["shop-categories"]}>

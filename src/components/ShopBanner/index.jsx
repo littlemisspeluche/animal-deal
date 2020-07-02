@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./ShopBanner.module.scss";
-import Button from "../Button/Button";
+import Button from "../Buttons/Button";
 
 export default function ShopBanner({ category }) {
 	return (

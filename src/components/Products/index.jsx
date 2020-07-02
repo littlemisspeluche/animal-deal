@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import actions from "../../actions";
 import { Link } from "react-router-dom";
-import { List, ListItem, makeStyles, Divider, Box } from "@material-ui/core";
-import ListItemText from "@material-ui/core/ListItemText";
+import { makeStyles, Divider } from "@material-ui/core";
 import Pagination from "@material-ui/lab/Pagination";
 
 import style from "./Products.module.scss";
@@ -35,14 +34,14 @@ export default function Products() {
 
 	const {
 		products,
-		sortedProductsList,
+		// sortedProductsList,
 		activeAnimalType,
 		activeProductType, // food
 		activeProductCategory, //dry food
 		filteredProducts
 	} = useSelector(state => state.products);
 
-	const { isMenuOpen } = useSelector(state => state.filters);
+	// const { isMenuOpen } = useSelector(state => state.filters);
 
 	const classes = useStyles();
 	const itemsPerPage = 10;
@@ -134,14 +133,12 @@ export default function Products() {
 					{filteredProducts
 						? filteredProducts
 								.slice((page - 1) * itemsPerPage, page * itemsPerPage)
-								.map(projectItem => {
-									const labelId = `list-secondary-label-${projectItem.name}`;
+								.map(product => {
+									const labelId = `list-secondary-label-${product.name}`;
 									return (
 										<Card
-											key={projectItem.id}
-											id={labelId}
-											title={projectItem.name}
-											price={projectItem.price}
+											key={product.id}
+											productData={product}
 											// className={classes.item}
 										/>
 									);
@@ -149,14 +146,12 @@ export default function Products() {
 						: products &&
 						  products
 								.slice((page - 1) * itemsPerPage, page * itemsPerPage)
-								.map(projectItem => {
-									const labelId = `list-secondary-label-${projectItem.name}`;
+								.map(product => {
+									const labelId = `list-secondary-label-${product.name}`;
 									return (
 										<Card
-											key={projectItem.id}
-											id={labelId}
-											title={projectItem.name}
-											price={projectItem.price}
+											key={product.id}
+											productData={product}
 											// className={classes.item}
 										/>
 									);
