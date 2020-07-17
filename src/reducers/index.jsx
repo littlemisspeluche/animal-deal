@@ -1,12 +1,8 @@
-import filters from "./Filters.reducer";
-import products from "./Products.reducer";
-import cart from "./Cart.reducer";
+import home from "./home.reducer";
 import { combineReducers } from "redux";
 
 const rootReducer = combineReducers({
-	filters,
-	products,
-	cart
+	home
 });
 
 export default rootReducer;

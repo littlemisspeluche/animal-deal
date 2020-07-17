@@ -5,13 +5,10 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
-import rootReducer from "./reducers";
+import rootReducer from "./reducers/index";
 import middlewareArr from "./middleware";
 
 const middleware = middlewareArr();
-
-// const composeEnhancers =
-// 	window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
 
 const store = createStore(rootReducer, applyMiddleware(...middleware));
 
